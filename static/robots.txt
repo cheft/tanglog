@@ -1,0 +1,23 @@
+# Robots.txt for Lofeng International Logistics
+Sitemap: https://www.loflog.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Specific bot configurations
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
