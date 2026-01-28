@@ -3,6 +3,9 @@
   import Hero from "$lib/components/Hero.svelte";
   import ServiceCard from "$lib/components/ServiceCard.svelte";
   import StatsSection from "$lib/components/StatsSection.svelte";
+  import StatsDisplay from "$lib/components/StatsDisplay.svelte";
+  import Testimonials from "$lib/components/Testimonials.svelte";
+  import ProcessSteps from "$lib/components/ProcessSteps.svelte";
   import WarehouseMap from "$lib/components/WarehouseMap.svelte";
   import ContactForm from "$lib/components/ContactForm.svelte";
   import Footer from "$lib/components/Footer.svelte";
@@ -98,10 +101,11 @@
     <Hero />
   </div>
 
-  <!-- <StatsSection /> -->
+  <!-- Stats Display Section -->
+  <StatsDisplay />
 
   <!-- Services Section -->
-  <section id="services" class="py-24 bg-slate-50 relative">
+  <section id="services" class="py-24 bg-white relative">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <span
@@ -123,6 +127,12 @@
       </div>
     </div>
   </section>
+
+  <!-- Testimonials Section -->
+  <Testimonials />
+
+  <!-- Process Steps Section -->
+  <ProcessSteps />
 
   <!-- Advantages Section (Redesigned) -->
   <section id="advantages" class="py-24 bg-white relative overflow-hidden">

@@ -90,11 +90,11 @@
           <Motion variants={itemVariants} let:motion>
             <h1
               use:motion
-              class="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-8 tracking-tight"
+              class="text-6xl lg:text-8xl font-black text-slate-900 leading-tight mb-8 tracking-tight"
             >
               {$t.hero.title_prefix} <br />
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600"
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600"
                 >{$t.hero.title_suffix}</span
               >
             </h1>
@@ -113,16 +113,16 @@
             <div use:motion class="flex flex-wrap justify-center gap-4">
               <a
                 href="{langPrefix}/shipping-calculator"
-                class="px-8 py-4 rounded-full bg-primary-600 hover:bg-primary-500 text-white font-semibold transition-all shadow-lg shadow-primary-900/20 flex items-center group"
+                class="px-10 py-5 rounded-full bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-600 text-white font-bold text-lg transition-all shadow-2xl shadow-primary-900/30 flex items-center group transform hover:scale-105"
               >
                 {$t.hero.cta_primary}
                 <ArrowRight
-                  class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  class="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform"
                 />
               </a>
               <a
                 href="{langPrefix}/tracking"
-                class="px-8 py-4 rounded-full border border-slate-200 hover:border-primary-200 hover:bg-slate-50 text-slate-700 font-semibold transition-all backdrop-blur-sm"
+                class="px-10 py-5 rounded-full border-2 border-slate-300 hover:border-primary-500 hover:bg-primary-50 text-slate-700 hover:text-primary-700 font-bold text-lg transition-all backdrop-blur-sm"
               >
                 {$t.hero.cta_secondary}
               </a>
