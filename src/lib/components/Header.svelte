@@ -30,7 +30,6 @@
 
   $: navLinks = [
     { name: $t.nav.home, href: `${langPrefix}/#home` },
-    { name: $t.calculator.title, href: `${langPrefix}/shipping-calculator` },
     { name: $t.tracking.title, href: `${langPrefix}/tracking` },
     { name: $t.nav.zip, href: `${langPrefix}/zip` },
     { name: $t.nav.blog, href: `${langPrefix}/blog` },
@@ -59,8 +58,8 @@
     <div
       class="w-full max-w-7xl flex items-center justify-between transition-all duration-500 relative
       {isScrolled
-        ? 'bg-white/80 backdrop-blur-xl shadow-lg shadow-black/5 border border-white/20 rounded-full px-6 py-3'
-        : 'bg-transparent px-2 py-3'}"
+        ? 'bg-white/80 backdrop-blur-xl shadow-lg shadow-black/5 rounded-full px-12 py-3 '
+        : ' rounded-full bg-transparent px-6 py-3'}"
     >
       <!-- Logo -->
       <a

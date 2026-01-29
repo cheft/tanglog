@@ -3,7 +3,7 @@
   import SEOHead from "$lib/components/SEOHead.svelte";
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/Footer.svelte";
-  import { Calendar, ArrowRight, Share2 } from "lucide-svelte";
+  import { ArrowRight } from "lucide-svelte";
   import type { PageData } from "./$types";
   import type { PostMetadata } from "$lib/utils/posts";
 
@@ -32,111 +32,97 @@
 
 <Header />
 
-<main class="pt-32 pb-24 bg-gradient-to-b from-slate-50 to-white min-h-screen">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <span
-        class="text-primary-600 font-semibold tracking-wider uppercase text-sm"
-        >{$t.blog.label}</span
-      >
-      <h1 class="text-4xl md:text-6xl font-black text-slate-900 mt-2 mb-4">
-        {$t.blog.title}
-      </h1>
-      <p class="text-slate-600 max-w-2xl mx-auto text-lg">
-        {$t.blog.description}
-      </p>
+<main class="min-h-screen bg-[#E6E6E6]">
+  <!-- Hero Section -->
+  <section class="bg-black pt-40 pb-24 px-6">
+    <div class="container mx-auto">
+      <div class="max-w-4xl">
+        <h1
+          class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+        >
+          <span class="text-[#EFC743]">{$t.blog.title}</span> & Feeds
+        </h1>
+        <p class="text-white/70 text-lg md:text-xl max-w-2xl leading-relaxed">
+          {$t.blog.description}
+        </p>
+      </div>
     </div>
+  </section>
 
-    {#if displayPosts.length > 0}
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {#each displayPosts as post, i}
-          <article
-            class="bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:translate-y-[-8px] transition-all duration-500 group flex flex-col h-full"
-            style="animation-delay: {i * 100}ms"
-          >
-            {#if post.image}
-              <div class="aspect-[16/10] relative overflow-hidden">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+  <!-- Blog Posts Section -->
+  <section class="py-20 px-6">
+    <div class="container mx-auto">
+      {#if displayPosts.length > 0}
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {#each displayPosts as post, i}
+            <article
+              class="group relative h-[540px] rounded-[10px] overflow-hidden bg-gray-900 shadow-xl"
+              style="animation-delay: {i * 100}ms"
+            >
+              <a
+                href="{$currentLang === 'zh' ? '/zh' : ''}/blog/{post.slug}"
+                class="block h-full w-full"
+              >
+                <!-- Background Image -->
+                {#if post.image}
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                {/if}
+
+                <!-- Overlay Gradient (for legibility if image is light/missing) -->
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"
                 ></div>
 
-                <!-- Category badge -->
-                <div class="absolute top-4 left-4">
-                  <span
-                    class="px-4 py-1.5 bg-primary-600 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg"
-                  >
-                    {$currentLang === "zh" ? "物流" : "LOGISTICS"}
-                  </span>
+                <!-- Glassmorphism Content Box -->
+                <div
+                  class="absolute bottom-5 left-5 right-5 p-8 backdrop-blur-xl bg-black/40 border border-white/10 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-black/50"
+                >
+                  <div class="flex flex-col h-full justify-end">
+                    <!-- Meta -->
+                    <div class="flex items-center justify-between mb-4">
+                      <span
+                        class="text-xs font-bold tracking-widest text-white/80 uppercase"
+                      >
+                        {post.date}
+                      </span>
+                      <span
+                        class="text-xs font-bold tracking-widest text-[#EFC743] uppercase"
+                      >
+                        {$currentLang === "zh" ? "物流" : "LOGISTICS"}
+                      </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h2
+                      class="text-2xl font-bold text-white leading-tight mb-2 line-clamp-2 group-hover:text-[#EFC743] transition-colors"
+                    >
+                      {post.title}
+                    </h2>
+
+                    <!-- Read More Link (Optional visual indicator) -->
+                    <div
+                      class="text-white/60 text-sm mt-4 flex items-center opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0"
+                    >
+                      {$currentLang === "zh" ? "阅读更多" : "Read Article"}
+                      <ArrowRight class="w-4 h-4 ml-2" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            {/if}
-
-            <div class="p-6 flex flex-col flex-grow">
-              <div
-                class="flex items-center text-sm text-slate-500 mb-4 space-x-3"
-              >
-                <div class="flex items-center">
-                  <Calendar class="w-4 h-4 mr-2 text-primary-500" />
-                  <span>{post.date}</span>
-                </div>
-                {#if post.author}
-                  <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
-                  <span>{post.author}</span>
-                {/if}
-              </div>
-
-              <h2
-                class="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 leading-tight"
-              >
-                <a
-                  href="{$currentLang === 'zh' ? '/zh' : ''}/blog/{post.slug}"
-                  class="focus:outline-none"
-                >
-                  {post.title}
-                </a>
-              </h2>
-
-              <p
-                class="text-slate-600 mb-6 line-clamp-3 flex-grow leading-relaxed"
-              >
-                {post.description}
-              </p>
-
-              <div
-                class="flex items-center justify-between pt-4 border-t border-slate-100 mt-auto"
-              >
-                <a
-                  href="{$currentLang === 'zh' ? '/zh' : ''}/blog/{post.slug}"
-                  class="flex items-center text-primary-600 font-semibold hover:text-primary-700 group/link"
-                >
-                  {$currentLang === "zh" ? "阅读更多" : "Read More"}
-                  <ArrowRight
-                    class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
-                  />
-                </a>
-
-                <button
-                  class="text-slate-400 hover:text-primary-600 transition-colors p-2 rounded-full hover:bg-primary-50"
-                  title={$t.blog.share}
-                >
-                  <Share2 class="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-          </article>
-        {/each}
-      </div>
-    {:else}
-      <div class="text-center py-24 text-slate-500">
-        <p class="text-lg">No posts found.</p>
-      </div>
-    {/if}
-  </div>
+              </a>
+            </article>
+          {/each}
+        </div>
+      {:else}
+        <div class="text-center py-24 text-slate-500">
+          <p class="text-lg">No posts found.</p>
+        </div>
+      {/if}
+    </div>
+  </section>
 </main>
 
 <Footer />

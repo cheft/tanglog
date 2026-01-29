@@ -4,9 +4,9 @@ export const currentLang = writable<"zh" | "en">("zh");
 
 const translations = {
   zh: {
-    companyName: "洛风国际物流",
+    companyName: "棠洛国际物流",
     keywords:
-      "洛风国际物流, 洛风物流, Lofeng, loflog, 中美物流, 美国海外仓, 运费计算器, 国际快递, 美国空派, 美国海派, 美森快船, 以星快船, 美国海卡, 超大件运输, 跨境电商物流, 亚马逊FBA头程, 独立站物流, 一件代发, 深圳国际物流, 美国专线, 中美运费计算器, 美国运费计算器, 美国物流运费计算器, 中美物流运费计算器",
+      "棠洛国际物流, 棠洛物流, tanglog, 中美物流, 美国海外仓, 运费计算器, 国际快递, 美国空派, 美国海派, 美森快船, 以星快船, 美国海卡, 超大件运输, 跨境电商物流, 亚马逊FBA头程, 独立站物流, 一件代发, 深圳国际物流, 美国专线, 中美运费计算器, 美国运费计算器, 美国物流运费计算器, 中美物流运费计算器",
     nav: {
       home: "首页",
       services: "服务",
@@ -19,8 +19,8 @@ const translations = {
     },
     hero: {
       badge: "中美跨境物流专家",
-      title_prefix: "洛风出马",
-      title_suffix: "风驰洛杉矶",
+      title_prefix: "棠洛出马",
+      title_suffix: "驰骋洛杉矶",
       description:
         "专注中美跨境物流服务，提供全方位的国际快递、空运、海运服务。自营海外仓一件代发，为您的跨境生意保驾护航。",
       cta_primary: "免费测算运费",

@@ -16,64 +16,6 @@
     class="relative w-full min-h-screen bg-[#0f172a] text-white overflow-hidden font-['Sarabun']"
 >
     <!-- Navigation / Header -->
-    <nav
-        class="absolute top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center"
-    >
-        <!-- Logo -->
-        <div class="flex items-center">
-            <img
-                src={logoPath}
-                alt="TangLog Logo"
-                class="h-10 md:h-12 object-contain"
-            />
-            <!-- Fallback text if logo fails or for SEO -->
-            <span
-                class="ml-3 text-2xl font-bold tracking-tighter hidden md:block"
-                >TangLog</span
-            >
-        </div>
-
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#home" class="hover:text-[#3b82f6] transition-colors"
-                >首页 (Home)</a
-            >
-            <a href="#about" class="hover:text-[#3b82f6] transition-colors"
-                >关于我们 (About)</a
-            >
-            <a href="#services" class="hover:text-[#3b82f6] transition-colors"
-                >服务 (Services)</a
-            >
-            <a href="#pages" class="hover:text-[#3b82f6] transition-colors"
-                >资讯 (News)</a
-            >
-            <a href="#contact" class="hover:text-[#3b82f6] transition-colors"
-                >联系我们 (Contact)</a
-            >
-        </div>
-        <div class="flex items-center space-x-4">
-            <span class="text-sm font-semibold hidden md:block"
-                >咨询热线: (+86) 177 2256 1770</span
-            >
-            <button
-                class="w-10 h-10 bg-[#3b82f6] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                </svg>
-            </button>
-        </div>
-    </nav>
 
     <!-- Hero Content -->
     <div
@@ -85,7 +27,7 @@
                 class="text-[clamp(2.5rem,7vw,6.5rem)] leading-[1.1] font-bold tracking-tight mb-8"
             >
                 中美跨境物流专家 <br />
-                <span class="text-[#3b82f6]">洛风出马 风驰洛杉矶</span>
+                <span class="text-[#3b82f6]">棠洛出马 驰骋洛杉矶</span>
             </h1>
 
             <p
