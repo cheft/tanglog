@@ -1,42 +1,42 @@
 <script lang="ts">
     const testimonials = [
         {
-            name: "Robert Fox",
-            role: "Founder, Kreo",
-            text: "Quick & reliable service! The tracking system is very accurate and the customer support is always there to help.",
+            name: "李先生 (Mr. Li)",
+            role: "跨境电商卖家",
+            text: "发货速度非常快，客服也很专业。特别是海外仓的一件代发服务，帮我省去了很多库存管理的麻烦。强烈推荐！",
             img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=60",
         },
         {
-            name: "Esther Howard",
-            role: "Manager, Orix",
-            text: "I have been using Outraze for 2 years now. They handle our delicate shipments with care. Highly recommended!",
+            name: "Sarah Jenkins",
+            role: "Import Manager",
+            text: "I've been working with TangLog for 2 years. Their sea freight rates are competitive and goods always arrive on time.",
             img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=60",
         },
     ];
 </script>
 
-<section class="py-24 bg-white text-black font-['Sarabun']">
+<section class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16">
             <div>
                 <h2
-                    class="text-xs font-bold uppercase tracking-widest text-[#FFCC00] mb-4"
+                    class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4"
                 >
-                    Testimonials
+                    客户评价 (Testimonials)
                 </h2>
-                <h3 class="text-4xl md:text-5xl font-bold leading-tight">
-                    Our clients say <br /> about us
+                <h3 class="text-3xl md:text-5xl font-bold leading-tight">
+                    客户对我们的 <br /> 真实评价
                 </h3>
             </div>
             <!-- Simple Nav Buttons -->
             <div class="flex space-x-4 mt-6 md:mt-0">
                 <button
-                    class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors"
+                    class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#0f172a] hover:text-white transition-colors"
                 >
                     &larr;
                 </button>
                 <button
-                    class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#FFCC00] hover:text-black transition-colors"
+                    class="w-12 h-12 rounded-full bg-[#0f172a] text-white flex items-center justify-center hover:bg-[#3b82f6] hover:text-white transition-colors"
                 >
                     &rarr;
                 </button>
@@ -46,17 +46,17 @@
         <div class="grid md:grid-cols-2 gap-8">
             {#each testimonials as item}
                 <div
-                    class="bg-gray-50 p-10 rounded-xl relative hover:bg-gray-100 transition-colors"
+                    class="bg-slate-50 p-10 rounded-xl relative hover:bg-white hover:shadow-lg transition-all border border-gray-100"
                 >
                     <!-- Quote Icon -->
                     <div
-                        class="text-[#FFCC00] text-6xl opacity-20 font-serif absolute top-6 right-8"
+                        class="text-[#3b82f6] text-6xl opacity-20 font-serif absolute top-6 right-8"
                     >
                         "
                     </div>
 
                     <p
-                        class="text-lg md:text-xl font-medium leading-relaxed mb-8 relative z-10"
+                        class="text-lg md:text-xl font-medium leading-relaxed mb-8 relative z-10 text-gray-700"
                     >
                         {item.text}
                     </p>

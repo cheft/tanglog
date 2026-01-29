@@ -3,20 +3,20 @@
 
     const faqs = [
         {
-            q: "How can I track my shipment?",
-            a: "You can track your shipment by entering your tracking ID in the hero section or using our dedicated tracking page.",
+            q: "如何追踪我的订单状态？",
+            a: "您可以在首页的搜索框中输入运单号，或者登录客户后台系统实时查看。",
         },
         {
-            q: "What are your shipping rates?",
-            a: "Our rates depend on the weight, dimensions, and destination of your cargo. Use our calculator for an estimate.",
+            q: "海运和空运的时效大概是多久？",
+            a: "美西海运一般15天左右，美东30天左右；空运普货3-5天，特快2-3天。",
         },
         {
-            q: "Do you offer insurance?",
-            a: "Yes, we offer comprehensive insurance coverage for all types of shipments to ensure peace of mind.",
+            q: "是否提供货物保险服务？",
+            a: "是的，我们建议并提供全面的货物运输保险，保障您的货物安全。",
         },
         {
-            q: "How long does delivery take?",
-            a: "Delivery times vary by service. Air freight takes 3-5 days, while sea freight can take 2-4 weeks.",
+            q: "大件家具可以派送上楼吗？",
+            a: "可以的，我们的美国本土卡车团队提供预约送货上门及搬运上楼服务。",
         },
     ];
 
@@ -27,7 +27,7 @@
     }
 </script>
 
-<section class="py-24 bg-white text-black font-['Sarabun']">
+<section class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
     <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16">
         <!-- Left: Image -->
         <div class="relative h-[600px] rounded-2xl overflow-hidden">
@@ -38,14 +38,14 @@
             />
             <!-- Overlay Box -->
             <div
-                class="absolute bottom-8 left-8 right-8 bg-[#FFCC00] p-6 rounded-lg"
+                class="absolute bottom-8 left-8 right-8 bg-[#3b82f6] p-6 rounded-lg text-white"
             >
                 <div class="text-xs font-bold uppercase tracking-widest mb-2">
-                    Have Question?
+                    有疑问?
                 </div>
-                <div class="text-2xl font-bold mb-4">+1 (00) 123 456 789</div>
-                <p class="text-sm">
-                    Call us anytime for assistance with your shipping needs.
+                <div class="text-2xl font-bold mb-4">(+86) 177 2256 1770</div>
+                <p class="text-sm text-blue-100">
+                    随时拨打我们的热线电话，我们随时为您服务。
                 </p>
             </div>
         </div>
@@ -53,38 +53,38 @@
         <!-- Right: Accordion -->
         <div class="flex flex-col justify-center">
             <h2
-                class="text-xs font-bold uppercase tracking-widest text-[#FFCC00] mb-4"
+                class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4"
             >
-                FAQ
+                常见问题 (FAQ)
             </h2>
-            <h3 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
-                Frequently Asked <br /> Questions
+            <h3 class="text-3xl md:text-5xl font-bold leading-tight mb-8">
+                关于物流的 <br /> 常见疑问
             </h3>
 
             <div class="space-y-4">
                 {#each faqs as faq, i}
-                    <div class="border-b border-gray-200 pb-4">
+                    <div class="border-b border-gray-100 pb-4">
                         <button
-                            class="w-full flex justify-between items-center py-4 text-left focus:outline-none"
+                            class="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
                             on:click={() => toggle(i)}
                         >
                             <span
                                 class="text-xl font-bold {openIndex === i
-                                    ? 'text-[#FFCC00]'
-                                    : 'text-black'} transition-colors"
+                                    ? 'text-[#3b82f6]'
+                                    : 'text-[#0f172a]'} group-hover:text-[#3b82f6] transition-colors"
                                 >{faq.q}</span
                             >
                             <span
                                 class="text-2xl font-light {openIndex === i
-                                    ? 'text-[#FFCC00] rotate-45'
-                                    : 'text-gray-400'} transition-transform duration-300"
+                                    ? 'text-[#3b82f6] rotate-45'
+                                    : 'text-gray-300'} transition-transform duration-300"
                                 >+</span
                             >
                         </button>
                         {#if openIndex === i}
                             <div
                                 transition:slide
-                                class="text-gray-600 leading-relaxed pb-4"
+                                class="text-gray-500 leading-relaxed pb-4"
                             >
                                 {faq.a}
                             </div>

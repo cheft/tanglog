@@ -1,19 +1,19 @@
-<section class="pt-24 pb-12 bg-black text-white font-['Sarabun']">
+<section class="pt-24 pb-12 bg-[#0f172a] text-white font-['Sarabun']">
     <div class="container mx-auto px-6">
         <!-- CTA Top -->
         <div
             class="flex flex-col md:flex-row justify-between items-center border-b border-white/10 pb-16 mb-16"
         >
             <h2
-                class="text-4xl md:text-5xl font-bold leading-[1.1] mb-8 md:mb-0"
+                class="text-3xl md:text-4xl font-bold leading-[1.1] mb-8 md:mb-0"
             >
-                Great transport start <br /> with
-                <span class="text-[#FFCC00]">great fright.</span>
+                优质的物流体验 <br /> 从
+                <span class="text-[#3b82f6]">洛风国际</span> 开始.
             </h2>
             <button
-                class="bg-[#FFCC00] text-black font-bold py-4 px-10 rounded-full hover:bg-white transition-colors text-lg"
+                class="bg-[#3b82f6] text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-[#3b82f6] transition-colors text-lg"
             >
-                Get A Quote
+                获取报价 (Get Quote)
             </button>
         </div>
 
@@ -21,58 +21,63 @@
         <div class="grid md:grid-cols-4 gap-12 mb-16">
             <!-- Col 1 -->
             <div>
-                <div class="text-2xl font-bold tracking-tighter mb-6">
-                    outraze
+                <div
+                    class="text-2xl font-bold tracking-tighter mb-6 flex items-center gap-2"
+                >
+                    TangLog <span class="text-sm font-normal text-gray-400"
+                        >| 洛风国际</span
+                    >
                 </div>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    We provide the best logistic service for your business. We
-                    have a professional team.
+                <p class="text-gray-400 mb-6 leading-relaxed text-sm">
+                    中美跨境物流专家，为您提供安全、高效、省心的国际货运服务。
+                    <br /><br />
+                    深圳市宝安区新田社区新塘路28号天佑第二工业区B栋
                 </p>
                 <div class="flex space-x-4">
                     <!-- Socials -->
                     <div
-                        class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#FFCC00] hover:border-[#FFCC00] hover:text-black transition-colors cursor-pointer"
+                        class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#3b82f6] hover:border-[#3b82f6] hover:text-white transition-colors cursor-pointer"
                     >
                         In
                     </div>
                     <div
-                        class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#FFCC00] hover:border-[#FFCC00] hover:text-black transition-colors cursor-pointer"
+                        class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#3b82f6] hover:border-[#3b82f6] hover:text-white transition-colors cursor-pointer"
                     >
-                        Fb
+                        W
                     </div>
                 </div>
             </div>
 
             <!-- Col 2 -->
             <div>
-                <h4 class="font-bold text-lg mb-6">Our Services</h4>
-                <ul class="space-y-4 text-gray-400">
+                <h4 class="font-bold text-lg mb-6">我们的服务</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
                             href="#sea"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Sea Freight</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >海运整柜/拼箱</a
                         >
                     </li>
                     <li>
                         <a
                             href="#air"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Air Freight</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >国际快递/空运</a
                         >
                     </li>
                     <li>
                         <a
                             href="#rail"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Rail Freight</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >美国本土卡派</a
                         >
                     </li>
                     <li>
                         <a
                             href="#road"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Road Freight</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >海外仓一件代发</a
                         >
                     </li>
                 </ul>
@@ -80,34 +85,34 @@
 
             <!-- Col 3 -->
             <div>
-                <h4 class="font-bold text-lg mb-6">Useful Links</h4>
-                <ul class="space-y-4 text-gray-400">
+                <h4 class="font-bold text-lg mb-6">快速链接</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
                             href="#about"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >About Us</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >关于我们</a
                         >
                     </li>
                     <li>
                         <a
                             href="#team"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Our Team</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >团队介绍</a
                         >
                     </li>
                     <li>
                         <a
                             href="#blog"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Latest News</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >新闻资讯</a
                         >
                     </li>
                     <li>
                         <a
                             href="#contact"
-                            class="hover:text-[#FFCC00] transition-colors"
-                            >Contact Us</a
+                            class="hover:text-[#3b82f6] transition-colors"
+                            >联系我们</a
                         >
                     </li>
                 </ul>
@@ -115,19 +120,18 @@
 
             <!-- Col 4 -->
             <div>
-                <h4 class="font-bold text-lg mb-6">Newsletter</h4>
-                <p class="text-gray-400 mb-6">
-                    Subscribe our newsletter to get more free design course and
-                    resource.
+                <h4 class="font-bold text-lg mb-6">订阅通讯</h4>
+                <p class="text-gray-400 mb-6 text-sm">
+                    订阅我们的邮件，获取最新运价优惠和行业资讯。
                 </p>
                 <div class="flex">
                     <input
                         type="email"
-                        placeholder="Your Email"
-                        class="bg-white/10 border-none outline-none text-white px-4 py-3 rounded-l-lg w-full placeholder-gray-500"
+                        placeholder="您的邮箱 (Email)"
+                        class="bg-white/10 border-none outline-none text-white px-4 py-3 rounded-l-lg w-full placeholder-gray-500 text-sm"
                     />
                     <button
-                        class="bg-[#FFCC00] text-black px-6 py-3 rounded-r-lg font-bold hover:bg-white transition-colors"
+                        class="bg-[#3b82f6] text-white px-6 py-3 rounded-r-lg font-bold hover:bg-white hover:text-[#3b82f6] transition-colors"
                     >
                         Go
                     </button>
@@ -139,10 +143,10 @@
         <div
             class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 pt-8 border-t border-white/10"
         >
-            <div>© 2023 Outraze. All rights reserved.</div>
+            <div>© 2024 TangLog. All rights reserved. 粤ICP备XXXXXXXX号</div>
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#terms" class="hover:text-white">Terms & Conditions</a>
-                <a href="#privacy" class="hover:text-white">Privacy Policy</a>
+                <a href="#terms" class="hover:text-white">隐私政策</a>
+                <a href="#privacy" class="hover:text-white">服务条款</a>
             </div>
         </div>
     </div>

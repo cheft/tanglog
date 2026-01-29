@@ -1,40 +1,61 @@
 <script lang="ts">
-    // Placeholder for the truck image - using a high quality Unsplash alternative that matches the vibe
+    import { Motion, useAnimation } from "svelte-motion";
+    import { onMount } from "svelte";
+    // import logo from "$lib/../static/tanglog.png"; // Assuming alias works, or use absolute path if needed.
+    // Actually in SvelteKit static assets are typically referenced as root strings like '/tanglog.png' if in static.
+    // Let's use the string path.
+    const logoPath = "/tanglog.png";
+
+    // Placeholder for the truck image - keeping the high quality one but it might not match perfectly.
+    // Ideally we'd use a more "blue" or neutral truck.
     const truckImage =
         "https://images.unsplash.com/photo-1586191582114-e91c366e4483?q=80&w=2670&auto=format&fit=crop";
 </script>
 
 <section
-    class="relative w-full min-h-screen bg-black text-white overflow-hidden font-['Sarabun']"
+    class="relative w-full min-h-screen bg-[#0f172a] text-white overflow-hidden font-['Sarabun']"
 >
-    <!-- Navigation / Header (Simple version for this clone) -->
+    <!-- Navigation / Header -->
     <nav
         class="absolute top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center"
     >
-        <div class="text-2xl font-bold tracking-tighter">outraze</div>
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img
+                src={logoPath}
+                alt="TangLog Logo"
+                class="h-10 md:h-12 object-contain"
+            />
+            <!-- Fallback text if logo fails or for SEO -->
+            <span
+                class="ml-3 text-2xl font-bold tracking-tighter hidden md:block"
+                >TangLog</span
+            >
+        </div>
+
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#home" class="hover:text-[#FFCC00] transition-colors"
-                >Home</a
+            <a href="#home" class="hover:text-[#3b82f6] transition-colors"
+                >首页 (Home)</a
             >
-            <a href="#about" class="hover:text-[#FFCC00] transition-colors"
-                >About</a
+            <a href="#about" class="hover:text-[#3b82f6] transition-colors"
+                >关于我们 (About)</a
             >
-            <a href="#services" class="hover:text-[#FFCC00] transition-colors"
-                >Services</a
+            <a href="#services" class="hover:text-[#3b82f6] transition-colors"
+                >服务 (Services)</a
             >
-            <a href="#pages" class="hover:text-[#FFCC00] transition-colors"
-                >Pages</a
+            <a href="#pages" class="hover:text-[#3b82f6] transition-colors"
+                >资讯 (News)</a
             >
-            <a href="#contact" class="hover:text-[#FFCC00] transition-colors"
-                >Contact</a
+            <a href="#contact" class="hover:text-[#3b82f6] transition-colors"
+                >联系我们 (Contact)</a
             >
         </div>
         <div class="flex items-center space-x-4">
             <span class="text-sm font-semibold hidden md:block"
-                >Call Us: (00) 112 365 489</span
+                >咨询热线: (+86) 177 2256 1770</span
             >
             <button
-                class="w-10 h-10 bg-[#FFCC00] rounded-full flex items-center justify-center text-black hover:scale-110 transition-transform"
+                class="w-10 h-10 bg-[#3b82f6] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +82,19 @@
         <!-- Main Heading -->
         <div class="max-w-4xl mt-20">
             <h1
-                class="text-[clamp(3rem,8vw,7.5rem)] leading-[0.9] font-bold tracking-tight mb-8"
+                class="text-[clamp(2.5rem,7vw,6.5rem)] leading-[1.1] font-bold tracking-tight mb-8"
             >
-                All about making <br />
-                <span class="text-[#FFCC00]">simple moving</span>
+                中美跨境物流专家 <br />
+                <span class="text-[#3b82f6]">洛风出马 风驰洛杉矶</span>
             </h1>
+
+            <p
+                class="text-gray-300 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
+            >
+                专注中美跨境物流服务，提供全方位的国际快递、空运、海运服务。<br
+                />
+                自营海外仓一件代发，为您的跨境生意保驾护航。
+            </p>
 
             <!-- Track Order Bar -->
             <div
@@ -78,7 +107,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6 text-[#FFCC00]"
+                        class="w-6 h-6 text-[#3b82f6]"
                     >
                         <path
                             stroke-linecap="round"
@@ -94,21 +123,20 @@
                 </div>
                 <input
                     type="text"
-                    placeholder="Track your order"
+                    placeholder="输入运单号查询 (Track Order)"
                     class="bg-transparent border-none outline-none text-white placeholder-gray-300 flex-1 h-12 text-lg focus:ring-0"
                 />
                 <button
-                    class="bg-[#FFCC00] text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors cursor-pointer"
+                    class="bg-[#3b82f6] text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-[#3b82f6] transition-colors cursor-pointer"
                 >
-                    Track Now
+                    立即查询
                 </button>
             </div>
         </div>
 
         <!-- Truck Image Overlay -->
-        <!-- Positioned absolutely to the right/bottom -->
         <div
-            class="absolute right-[-10%] bottom-10 w-[60%] md:w-[50%] z-[-1] opacity-90 pointing-events-none"
+            class="absolute right-[-10%] bottom-10 w-[60%] md:w-[50%] z-[-1] opacity-60 md:opacity-90 pointer-events-none"
         >
             <img
                 src={truckImage}
@@ -123,7 +151,7 @@
             class="absolute bottom-10 left-6 flex items-center space-x-4 cursor-pointer"
         >
             <div
-                class="w-12 h-12 border border-white/30 rounded-full flex items-center justify-center animate-bounce"
+                class="w-12 h-12 border border-white/30 rounded-full flex items-center justify-center animate-bounce text-[#3b82f6]"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +169,7 @@
                 </svg>
             </div>
             <span class="text-sm font-medium tracking-widest uppercase"
-                >Scroll Down</span
+                >向下滚动 (Scroll)</span
             >
         </div>
     </div>
