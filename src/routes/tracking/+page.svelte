@@ -106,26 +106,42 @@
 
 <Header />
 
-<main class="min-h-screen bg-slate-50 pt-32 pb-20 font-sans">
-  <div class="container mx-auto px-6 max-w-4xl">
-    <!-- Header Section -->
-    <div class="text-center mb-12">
+<main class="min-h-screen bg-slate-50 font-sans">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-40 pb-24 px-6 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/map.jpeg"
+        alt="Tracking Background"
+        class="w-full h-full object-cover opacity-40"
+      />
       <div
-        class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-sm font-medium mb-4"
-      >
-        <Package class="w-4 h-4 mr-2" />
-        {$t.tracking.realtime}
-      </div>
-      <h1
-        class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight"
-      >
-        {$t.tracking.title}
-      </h1>
-      <p class="text-slate-600 max-w-xl mx-auto">
-        {$t.tracking.description}
-      </p>
+        class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"
+      ></div>
     </div>
 
+    <div class="container mx-auto relative z-10">
+      <div class="max-w-4xl">
+        <div
+          class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-[#EFC743] text-sm font-medium mb-6 backdrop-blur-sm border border-white/5"
+        >
+          <Package class="w-4 h-4 mr-2" />
+          {$t.tracking.realtime}
+        </div>
+        <h1
+          class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+        >
+          <span class="text-[#EFC743]">{$t.tracking.title}</span>
+        </h1>
+        <p class="text-white/70 text-lg md:text-xl max-w-2xl leading-relaxed">
+          {$t.tracking.description}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-6 max-w-4xl -mt-12 relative z-10">
     <!-- Search Box -->
     <div class="relative mb-12" bind:this={searchContainer}>
       <div

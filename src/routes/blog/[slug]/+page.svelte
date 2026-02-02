@@ -93,62 +93,70 @@
 {#if activePost}
   <Header />
 
-  <main class="bg-white min-h-screen pt-32 pb-24">
-    <!-- Article Container -->
-    <article class="container mx-auto px-6 max-w-4xl">
-      <!-- Article Header -->
-      <header class="mb-12">
-        <a
-          href={$currentLang === "zh" ? "/zh/blog" : "/blog"}
-          class="inline-flex items-center text-slate-500 hover:text-slate-900 transition-colors mb-8 group text-sm font-medium"
-        >
-          <ArrowLeft
-            class="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform"
-          />
-          {$t.blog.backToBlog}
-        </a>
+  <main class="bg-white min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-black pt-40 pb-24 px-6">
+      <div class="container mx-auto">
+        <div class="max-w-4xl">
+          <a
+            href={$currentLang === "zh" ? "/zh/blog" : "/blog"}
+            class="inline-flex items-center text-[#EFC743] hover:text-white transition-colors mb-8 group text-sm font-medium"
+          >
+            <ArrowLeft
+              class="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform"
+            />
+            {$t.blog.backToBlog}
+          </a>
 
-        <h1
-          class="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] mb-8 tracking-tight"
-        >
-          {activePost.title}
-        </h1>
+          <h1
+            class="text-4xl md:text-6xl font-black text-white leading-[1.1] mb-8 tracking-tight"
+          >
+            {activePost.title}
+          </h1>
 
-        <p class="text-2xl text-slate-500 leading-relaxed mb-8 font-normal">
-          {activePost.description}
-        </p>
+          <p
+            class="text-xl md:text-2xl text-white/70 leading-relaxed mb-8 font-normal"
+          >
+            {activePost.description}
+          </p>
 
-        <!-- Author / Meta Block -->
-        <div
-          class="flex items-center justify-between border-t border-b border-slate-100 py-6"
-        >
-          <div class="flex items-center space-x-4">
-            <div
-              class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-400"
-            >
-              <User class="w-6 h-6" />
-            </div>
-            <div>
-              <div class="font-bold text-slate-900 text-base">
-                {activePost.author || "Loflog Team"}
+          <!-- Author / Meta Block -->
+          <div
+            class="flex items-center justify-between border-t border-white/10 py-6"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white/40"
+              >
+                <User class="w-6 h-6" />
               </div>
-              <div class="text-slate-500 text-sm flex items-center space-x-2">
-                <span>{activePost.date}</span>
-                <span>·</span>
-                <span>{readTime} min read</span>
+              <div>
+                <div class="font-bold text-white text-base">
+                  {activePost.author || "Loflog Team"}
+                </div>
+                <div class="text-white/50 text-sm flex items-center space-x-2">
+                  <span>{activePost.date}</span>
+                  <span>·</span>
+                  <span>{readTime} min read</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="flex items-center space-x-2 text-slate-400">
-            <button
-              class="p-2 hover:text-slate-900 transition-colors rounded-full hover:bg-slate-50"
-            >
-              <Share2 class="w-5 h-5" />
-            </button>
+            <div class="flex items-center space-x-2 text-white/40">
+              <button
+                class="p-2 hover:text-white transition-colors rounded-full hover:bg-white/5"
+              >
+                <Share2 class="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </section>
+
+    <!-- Article Container -->
+    <article class="container mx-auto px-6 max-w-4xl py-12">
+      <!-- Article Header Removed as it's now in Hero -->
 
       <!-- Featured Image -->
       {#if activePost.image}

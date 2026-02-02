@@ -13,25 +13,37 @@
 </script>
 
 <section
-    class="relative w-full min-h-screen bg-[#0f172a] text-white overflow-hidden font-['Sarabun']"
+    class="relative w-full min-h-screen bg-black text-white overflow-hidden font-['Sarabun'] pt-40 pb-24"
 >
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img
+            src="/bg.png"
+            alt="Logistics Background"
+            class="w-full h-full object-cover opacity-60"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"
+        ></div>
+    </div>
+
     <!-- Navigation / Header -->
 
     <!-- Hero Content -->
     <div
-        class="relative z-10 container mx-auto px-6 h-screen flex flex-col justify-center"
+        class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center"
     >
         <!-- Main Heading -->
-        <div class="max-w-4xl mt-20">
+        <div class="max-w-4xl">
             <h1
-                class="text-[clamp(2.5rem,7vw,6.5rem)] leading-[1.1] font-bold tracking-tight mb-8"
+                class="text-5xl md:text-7xl leading-[1.1] font-bold tracking-tight mb-8"
             >
                 中美跨境物流专家 <br />
-                <span class="text-[#3b82f6]">棠洛出马 驰骋洛杉矶</span>
+                <span class="text-[#EFC743]">棠洛出马 驰骋洛杉矶</span>
             </h1>
 
             <p
-                class="text-gray-300 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
+                class="text-white/70 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
             >
                 专注中美跨境物流服务，提供全方位的国际快递、空运、海运服务。<br
                 />
@@ -49,7 +61,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6 text-[#3b82f6]"
+                        class="w-6 h-6 text-[#EFC743]"
                     >
                         <path
                             stroke-linecap="round"
@@ -66,10 +78,10 @@
                 <input
                     type="text"
                     placeholder="输入运单号查询 (Track Order)"
-                    class="bg-transparent border-none outline-none text-white placeholder-gray-300 flex-1 h-12 text-lg focus:ring-0"
+                    class="bg-transparent border-none outline-none text-white placeholder-white/30 flex-1 h-12 text-lg focus:ring-0"
                 />
                 <button
-                    class="bg-[#3b82f6] text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-[#3b82f6] transition-colors cursor-pointer"
+                    class="bg-[#EFC743] text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors cursor-pointer"
                 >
                     立即查询
                 </button>
@@ -77,7 +89,7 @@
         </div>
 
         <!-- Truck Image Overlay -->
-        <div
+        <!-- <div
             class="absolute right-[-10%] bottom-10 w-[60%] md:w-[50%] z-[-1] opacity-60 md:opacity-90 pointer-events-none"
         >
             <img
@@ -86,14 +98,14 @@
                 class="object-contain w-full h-full grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"
                 style="mask-image: linear-gradient(to bottom, black 50%, transparent 100%);"
             />
-        </div>
+        </div> -->
 
         <!-- Scroll Down Indicator -->
         <div
             class="absolute bottom-10 left-6 flex items-center space-x-4 cursor-pointer"
         >
             <div
-                class="w-12 h-12 border border-white/30 rounded-full flex items-center justify-center animate-bounce text-[#3b82f6]"
+                class="w-12 h-12 border border-white/30 rounded-full flex items-center justify-center animate-bounce text-[#EFC743]"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +122,8 @@
                     />
                 </svg>
             </div>
-            <span class="text-sm font-medium tracking-widest uppercase"
+            <span
+                class="text-sm font-medium tracking-widest uppercase text-white/50"
                 >向下滚动 (Scroll)</span
             >
         </div>

@@ -9,7 +9,7 @@
         {
             date: "20 Dec, 2023",
             title: "绿色物流可持续发展",
-            desc: "洛风国际致力于推行绿色物流，通过优化路线和包装减少碳排放。",
+            desc: "棠洛国际致力于推行绿色物流，通过优化路线和包装减少碳排放。",
             img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=60",
         },
         {

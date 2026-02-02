@@ -45,13 +45,6 @@
                     为您提供安全 & <br /> 可靠的物流服务
                 </h3>
             </div>
-            <div class="mt-6 md:mt-0">
-                <button
-                    class="bg-white border border-[#0f172a] px-8 py-3 rounded-full font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
-                >
-                    查看所有服务
-                </button>
-            </div>
         </div>
 
         <!-- Grid -->

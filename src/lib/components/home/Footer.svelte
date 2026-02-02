@@ -8,7 +8,7 @@
                 class="text-3xl md:text-4xl font-bold leading-[1.1] mb-8 md:mb-0"
             >
                 优质的物流体验 <br /> 从
-                <span class="text-[#3b82f6]">洛风国际</span> 开始.
+                <span class="text-[#3b82f6]">棠洛国际</span> 开始.
             </h2>
             <button
                 class="bg-[#3b82f6] text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-[#3b82f6] transition-colors text-lg"
@@ -25,7 +25,7 @@
                     class="text-2xl font-bold tracking-tighter mb-6 flex items-center gap-2"
                 >
                     TangLog <span class="text-sm font-normal text-gray-400"
-                        >| 洛风国际</span
+                        >| 棠洛国际</span
                     >
                 </div>
                 <p class="text-gray-400 mb-6 leading-relaxed text-sm">

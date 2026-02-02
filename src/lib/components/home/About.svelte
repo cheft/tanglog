@@ -20,7 +20,7 @@
                 安全、可靠 & <br /> 高效的跨境物流专家
             </h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
-                洛风国际物流（TangLog）专注中美跨境物流服务，中美双公司认证运营。我们深知每一份托付的重量，致力于为您提供最优质的物流体验。
+                棠洛国际物流（TangLog）专注中美跨境物流服务，中美双公司认证运营。我们深知每一份托付的重量，致力于为您提供最优质的物流体验。
                 无论是国际快递、海运还是海外仓配，我们都能为您提供一站式解决方案。
             </p>
 
@@ -67,7 +67,7 @@
             <div
                 class="bg-[#0f172a] text-white p-8 rounded-lg flex flex-col justify-center items-center text-center"
             >
-                <span class="text-5xl font-bold text-[#3b82f6] mb-2">10+</span>
+                <span class="text-5xl font-bold text-[#3b82f6] mb-2">3+</span>
                 <span class="text-sm font-medium uppercase tracking-wider"
                     >Years of <br /> Experience</span
                 >

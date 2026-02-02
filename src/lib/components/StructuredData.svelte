@@ -4,7 +4,7 @@
   const organizationSchema = $derived({
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "洛风国际物流有限公司",
+    name: "棠洛国际物流有限公司",
     alternateName: "Lofeng International Logistics Co., Ltd.",
     url: "https://www.loflog.com",
     logo: "https://www.loflog.com/logo.png",
@@ -48,7 +48,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://www.loflog.com/#localbusiness",
-    name: "洛风国际物流",
+    name: "棠洛国际物流",
     image: "https://www.loflog.com/warehouse.jpg",
     telephone: "+86-177-2256-1770",
     email: "services@loflog.com",
@@ -91,7 +91,7 @@
         : "International Logistics Services",
     provider: {
       "@type": "Organization",
-      name: "洛风国际物流",
+      name: "棠洛国际物流",
     },
     areaServed: ["CN", "US"],
     hasOfferCatalog: {

@@ -34,8 +34,18 @@
 
 <main class="min-h-screen bg-[#E6E6E6]">
   <!-- Hero Section -->
-  <section class="bg-black pt-40 pb-24 px-6">
-    <div class="container mx-auto">
+  <section class="relative bg-black pt-40 pb-24 px-6 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/bg2.webp"
+        alt="Blog and News"
+        class="w-full h-full object-cover opacity-50 scale-105"
+      />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="container mx-auto relative z-10">
       <div class="max-w-4xl">
         <h1
           class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
