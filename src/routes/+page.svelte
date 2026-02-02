@@ -14,7 +14,6 @@
 <div class="bg-black min-h-screen text-white">
   <Header />
   <Hero />
-  <About />
   <Services />
   <Process />
   <Testimonials />

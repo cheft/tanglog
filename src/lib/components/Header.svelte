@@ -56,7 +56,7 @@
 >
   <div class="container mx-auto px-4 md:px-6 flex justify-center">
     <div
-      class="w-full max-w-7xl flex items-center justify-between transition-all duration-500 relative
+      class="w-full flex items-center justify-between transition-all duration-500 relative
       {isScrolled
         ? 'bg-white/80 backdrop-blur-xl shadow-lg shadow-black/5 rounded-full px-12 py-3 '
         : ' rounded-full bg-transparent px-6 py-3'}"
@@ -128,7 +128,10 @@
         {#each navLinks as link}
           <a
             href={link.href}
-            class="px-4 py-2 text-sm font-medium text-slate-600 rounded-full hover:bg-slate-100 hover:text-slate-900 transition-all duration-300 transform hover:-translate-y-0.5"
+            class="px-4 py-2 text-base font-bold rounded-full transition-all duration-300 transform hover:-translate-y-0.5
+            {isScrolled
+              ? 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
+              : 'text-white/90 hover:bg-white/20 hover:text-white'}"
           >
             {link.name}
           </a>
@@ -140,7 +143,10 @@
         <!-- Language Switcher -->
         <button
           on:click={toggleLang}
-          class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300 transition-all duration-300"
+          class="flex items-center justify-center w-10 h-10 rounded-full border transition-all duration-300
+          {isScrolled
+            ? 'border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300'
+            : 'border-white/20 text-white hover:bg-white/10 hover:border-white/40'}"
           aria-label="Toggle Language"
         >
           <span class="text-xs font-bold font-mono tracking-wider">

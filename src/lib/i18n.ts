@@ -33,6 +33,7 @@ const translations = {
         status: "今日发货",
         value: "1,984 件",
       },
+      cta_wechat: "微信咨询",
     },
     tracking: {
       title: "货物追踪",
@@ -61,6 +62,8 @@ const translations = {
       clients: "服务客户",
       warehouses: "自营仓库",
       parcels: "年处理包裹",
+      satisfaction: "服务满意度",
+      support: "在线支持",
     },
     services: {
       label: "我们的服务",
@@ -397,6 +400,7 @@ const translations = {
         status: "Shipped Today",
         value: "1,984 Items",
       },
+      cta_wechat: "Inquire via WeChat",
     },
     tracking: {
       title: "Cargo Tracking",
@@ -425,6 +429,8 @@ const translations = {
       clients: "Clients Served",
       warehouses: "Self-Operated Warehouses",
       parcels: "Annual Parcels Processed",
+      satisfaction: "Satisfaction",
+      support: "Online Support",
     },
     services: {
       label: "Our Services",
