@@ -95,9 +95,9 @@
 
   <main class="bg-white min-h-screen">
     <!-- Hero Section -->
-    <section class="bg-black pt-40 pb-24 px-6">
+    <section class="bg-black pt-40 pb-24 px-6 text-center">
       <div class="container mx-auto">
-        <div class="max-w-4xl">
+        <div class="max-w-4xl mx-auto">
           <a
             href={$currentLang === "zh" ? "/zh/blog" : "/blog"}
             class="inline-flex items-center text-[#EFC743] hover:text-white transition-colors mb-8 group text-sm font-medium"
@@ -115,14 +115,14 @@
           </h1>
 
           <p
-            class="text-xl md:text-2xl text-white/70 leading-relaxed mb-8 font-normal"
+            class="text-xl md:text-2xl text-white/70 leading-relaxed mb-12 font-normal"
           >
             {activePost.description}
           </p>
 
           <!-- Author / Meta Block -->
           <div
-            class="flex items-center justify-between border-t border-white/10 py-6"
+            class="flex flex-col md:flex-row items-center justify-center border-t border-white/10 py-8 gap-6"
           >
             <div class="flex items-center space-x-4">
               <div
@@ -130,7 +130,7 @@
               >
                 <User class="w-6 h-6" />
               </div>
-              <div>
+              <div class="text-left">
                 <div class="font-bold text-white text-base">
                   {activePost.author || "Loflog Team"}
                 </div>
@@ -142,7 +142,9 @@
               </div>
             </div>
 
-            <div class="flex items-center space-x-2 text-white/40">
+            <div
+              class="flex items-center space-x-2 text-white/40 border-l border-white/10 pl-6 h-10 hidden md:flex"
+            >
               <button
                 class="p-2 hover:text-white transition-colors rounded-full hover:bg-white/5"
               >
