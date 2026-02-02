@@ -130,15 +130,20 @@
 <main class="min-h-screen bg-slate-50 font-sans">
   <!-- Hero Section -->
   <section class="relative bg-black pt-40 pb-24 px-6 overflow-hidden">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
-      <img
-        src="/address.png"
-        alt="Zip Code Background"
-        class="w-full h-full object-cover opacity-50"
-      />
+    <!-- CSS-based Technical Background -->
+    <div class="absolute inset-0 z-0 bg-[#0B1121]">
+      <!-- Radial Gradient for depth -->
       <div
-        class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-blue-900/20"
+        class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-[#0B1121] to-[#0B1121]"
+      ></div>
+      <!-- Grid Pattern -->
+      <div
+        class="absolute inset-0 opacity-20"
+        style="background-image: linear-gradient(#334155 1px, transparent 1px), linear-gradient(to right, #334155 1px, transparent 1px); background-size: 40px 40px;"
+      ></div>
+      <!-- Dark Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#0B1121] via-transparent to-transparent"
       ></div>
     </div>
 

@@ -35,14 +35,20 @@
 <main class="min-h-screen bg-[#E6E6E6]">
   <!-- Hero Section -->
   <section class="relative bg-black pt-40 pb-24 px-6 overflow-hidden">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
-      <img
-        src="/bg2.webp"
-        alt="Blog and News"
-        class="w-full h-full object-cover opacity-50 scale-105"
-      />
-      <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+    <!-- CSS-based Abstract Background -->
+    <div class="absolute inset-0 z-0 bg-[#0B1121]">
+      <!-- Subway/Network abstract pattern using radial gradients -->
+      <div
+        class="absolute inset-0 opacity-10"
+        style="background-image: radial-gradient(#64748b 2px, transparent 2px); background-size: 30px 30px;"
+      ></div>
+      <!-- Blue Glow -->
+      <div
+        class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[80px] translate-y-1/4 -translate-x-1/4"
+      ></div>
     </div>
 
     <div class="container mx-auto relative z-10">

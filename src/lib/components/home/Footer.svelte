@@ -143,11 +143,12 @@
         <div
             class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 pt-8 border-t border-white/10"
         >
-            <div>© 2024 TangLog. All rights reserved. 粤ICP备XXXXXXXX号</div>
-            <div class="flex space-x-6 mt-4 md:mt-0">
+            <!-- <div>© 2024 TangLog. All rights reserved. 粤ICP备XXXXXXXX号</div> -->
+            <div>© 2026 TangLog. All rights reserved.</div>
+            <!-- <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#terms" class="hover:text-white">隐私政策</a>
                 <a href="#privacy" class="hover:text-white">服务条款</a>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
