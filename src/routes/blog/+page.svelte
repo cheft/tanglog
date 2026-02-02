@@ -2,7 +2,7 @@
   import { t, currentLang } from "$lib/i18n";
   import SEOHead from "$lib/components/SEOHead.svelte";
   import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+  import Footer from "$lib/components/home/Footer.svelte";
   import { ArrowRight } from "lucide-svelte";
   import type { PageData } from "./$types";
   import type { PostMetadata } from "$lib/utils/posts";

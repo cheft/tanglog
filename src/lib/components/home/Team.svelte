@@ -3,7 +3,7 @@
     import { MapPin, Mail, Phone } from "lucide-svelte";
 </script>
 
-<section class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
+<section id="team" class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2

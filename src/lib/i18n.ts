@@ -184,12 +184,23 @@ const translations = {
       },
     },
     footer: {
-      description:
-        "中美跨境物流专家，致力于为企业和个人提供高效、安全、实惠的跨境物流解决方案。",
-      services: "服务项目",
-      links: "快速链接",
-      follow: "关注我们",
-      rights: "Lofeng International Logistics Co., Ltd. All rights reserved.",
+      desc: "中美跨境物流专家，为您提供安全、高效、省心的国际货运服务。",
+      address: "深圳市宝安区新田社区新塘路28号天佑第二工业区B栋",
+      services: "我们的服务",
+      quickLinks: "快速链接",
+      copyRight: "© 2026 TangLog. 版权所有.",
+      homeLinks: {
+        services: "核心服务",
+        testimonials: "客户评价",
+        team: "专业团队",
+        blog: "最新资讯",
+        faq: "常见问题",
+      },
+      linkLabels: {
+        tracking: "货物追踪",
+        zip: "查地址",
+        blog: "博客",
+      },
     },
     blog: {
       label: "Loflog 博客",
@@ -669,12 +680,23 @@ const translations = {
       },
     },
     footer: {
-      description:
-        "China-US cross-border logistics expert, specializing in providing efficient, safe, and cost-effective cross-border logistics solutions for businesses and individuals.",
-      services: "Services",
-      links: "Quick Links",
-      follow: "Follow Us",
-      rights: "Lofeng International Logistics Co., Ltd. All rights reserved.",
+      desc: "Expert in China-US cross-border logistics, providing safe, efficient, and worry-free international freight services.",
+      address: "Bldg B, Tianyou 2nd Industrial Zone, No.28 Xintang Rd, Shenzhen, China",
+      services: "Our Services",
+      quickLinks: "Quick Links",
+      copyRight: "© 2026 TangLog. All rights reserved.",
+      homeLinks: {
+        services: "Our Services",
+        testimonials: "Testimonials",
+        team: "Pro Team",
+        blog: "News",
+        faq: "FAQ",
+      },
+      linkLabels: {
+        tracking: "Tracking",
+        zip: "Address Tool",
+        blog: "Blog",
+      },
     },
     blog: {
       label: "Loflog Blog",

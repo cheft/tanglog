@@ -1,6 +1,6 @@
 <script lang="ts">
   import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+  import Footer from "$lib/components/home/Footer.svelte";
   import SEOHead from "$lib/components/SEOHead.svelte";
   import { t, currentLang } from "$lib/i18n";
   import {

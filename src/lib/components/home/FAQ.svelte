@@ -10,7 +10,7 @@
     }
 </script>
 
-<section class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
+<section id="faq" class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
     <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <!-- Left: Image with Stats Overlay -->
         <div

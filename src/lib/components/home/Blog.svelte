@@ -21,7 +21,7 @@
     ];
 </script>
 
-<section class="py-24 bg-slate-50 text-[#0f172a] font-['Sarabun']">
+<section id="blog" class="py-24 bg-slate-50 text-[#0f172a] font-['Sarabun']">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>

@@ -36,6 +36,7 @@
 </script>
 
 <section
+    id="testimonials"
     class="py-24 bg-slate-50 text-[#0f172a] font-['Sarabun'] overflow-hidden"
 >
     <div class="container mx-auto px-6">
