@@ -17,6 +17,22 @@
     function prev() {
         currentIndex = (currentIndex - 2 + items.length) % items.length;
     }
+
+    // Helper to check if image failed to load
+    let imageErrors: Record<string, boolean> = {};
+
+    function handleImageError(name: string) {
+        imageErrors[name] = true;
+    }
+
+    const placeholderColors = [
+        "bg-blue-500",
+        "bg-purple-500",
+        "bg-emerald-500",
+        "bg-orange-500",
+        "bg-rose-500",
+        "bg-amber-500",
+    ];
 </script>
 
 <section
@@ -97,13 +113,26 @@
 
                         <div class="flex items-center space-x-4">
                             <div
-                                class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#3b82f6]/10"
+                                class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#3b82f6]/10 flex-shrink-0"
                             >
-                                <img
-                                    src={item.img}
-                                    alt={item.name}
-                                    class="w-full h-full object-cover"
-                                />
+                                {#if item.img && !imageErrors[item.name]}
+                                    <img
+                                        src={item.img}
+                                        alt={item.name}
+                                        class="w-full h-full object-cover"
+                                        on:error={() =>
+                                            handleImageError(item.name)}
+                                    />
+                                {:else}
+                                    <div
+                                        class="w-full h-full flex items-center justify-center text-white font-bold text-lg {placeholderColors[
+                                            items.indexOf(item) %
+                                                placeholderColors.length
+                                        ]}"
+                                    >
+                                        {item.name.charAt(0)}
+                                    </div>
+                                {/if}
                             </div>
                             <div>
                                 <h4

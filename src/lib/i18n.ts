@@ -219,7 +219,7 @@ const translations = {
           img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
         },
         {
-          name: "陈琳",
+          name: "陈之琳",
           role: "精品时尚店主",
           text: "海运拼箱很省心，客服全程跟踪。作为一个小卖家，我最看重的是安全和透明的收费，棠洛做到了。",
           img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=200&h=200&fit=crop",
@@ -231,7 +231,7 @@ const translations = {
           img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
         },
         {
-          name: "李军",
+          name: "李志军",
           role: "大件家具贸易商",
           text: "超大件运输一直是我们的痛点，但棠洛的美国卡派服务非常专业，预约送货上门帮了我们大忙。",
           img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=200&h=200&fit=crop",
@@ -250,12 +250,12 @@ const translations = {
       description: "我们拥有一支经验丰富的专业团队，时刻准备着为您解决物流难题。",
       items: [
         {
-          name: "林浩然",
+          name: "唐煜哲",
           role: "运营总监 (深圳)",
           img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=400&h=500&fit=crop",
         },
         {
-          name: "王强",
+          name: "张国强",
           role: "客户经理 (深圳)",
           img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=400&h=500&fit=crop",
         },
