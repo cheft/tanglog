@@ -210,7 +210,7 @@ const translations = {
           name: "张伟",
           role: "跨境电商 CEO",
           text: "棠洛的空运时效非常稳，帮我们赶上了几次大促。特别是他们在洛杉矶的自营仓，一件代发速度极快。",
-          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=200&h=200&fit=crop",
         },
         {
           name: "Robert Miller",
@@ -222,7 +222,7 @@ const translations = {
           name: "陈琳",
           role: "精品时尚店主",
           text: "海运拼箱很省心，客服全程跟踪。作为一个小卖家，我最看重的是安全和透明的收费，棠洛做到了。",
-          img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=200&h=200&fit=crop",
         },
         {
           name: "Jessica Brown",
@@ -234,7 +234,7 @@ const translations = {
           name: "李军",
           role: "大件家具贸易商",
           text: "超大件运输一直是我们的痛点，但棠洛的美国卡派服务非常专业，预约送货上门帮了我们大忙。",
-          img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=200&h=200&fit=crop",
         },
         {
           name: "David Williams",
@@ -252,22 +252,22 @@ const translations = {
         {
           name: "林浩然",
           role: "运营总监 (深圳)",
-          img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=400&h=500&fit=crop",
         },
         {
           name: "王强",
           role: "客户经理 (深圳)",
-          img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=400&h=500&fit=crop",
         },
         {
           name: "刘洋",
           role: "客户经理 (深圳)",
-          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1610088521094-0ba2657e2832?w=400&h=500&fit=crop",
         },
         {
           name: "陈淑菲",
           role: "客户经理 (洛杉矶)",
-          img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=500&fit=crop",
         },
       ],
     },
@@ -695,7 +695,7 @@ const translations = {
           name: "Zhang Wei",
           role: "E-comm CEO",
           text: "TangLog's air freight is incredibly stable. Their self-operated warehouse in LA provides lightning-fast fulfillment.",
-          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=200&h=200&fit=crop",
         },
         {
           name: "Robert Miller",
@@ -707,7 +707,7 @@ const translations = {
           name: "Chen Lin",
           role: "Boutique Owner",
           text: "Shipping LCL has never been easier. As a small seller, I value safety and transparent pricing, and TangLog delivers.",
-          img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=200&h=200&fit=crop",
         },
         {
           name: "Jessica Brown",
@@ -719,7 +719,7 @@ const translations = {
           name: "Li Jun",
           role: "Furniture Trader",
           text: "Oversized shipping was always a headache until we found TangLog. Their US trucking service is professional and reliable.",
-          img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=200&h=200&fit=crop",
+          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=200&h=200&fit=crop",
         },
         {
           name: "David Williams",
@@ -737,22 +737,22 @@ const translations = {
         {
           name: "Lin Haonan",
           role: "Op Director (SZ)",
-          img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=400&h=500&fit=crop",
         },
         {
           name: "Wang Qiang",
           role: "Account Manager (SZ)",
-          img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=400&h=500&fit=crop",
         },
         {
           name: "Liu Yang",
           role: "Account Manager (SZ)",
-          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1610088521094-0ba2657e2832?w=400&h=500&fit=crop",
         },
         {
           name: "Sophie Chen",
           role: "Account Manager (LA)",
-          img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=500&fit=crop",
         },
       ],
     },
