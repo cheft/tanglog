@@ -1,26 +1,6 @@
 <script lang="ts">
-    const team = [
-        {
-            name: "Edward Norton",
-            role: "运营总监 (Director)",
-            img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=60",
-        },
-        {
-            name: "Jane Cooper",
-            role: "海运经理 (Sea Freight)",
-            img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=60",
-        },
-        {
-            name: "Guy Hawkins",
-            role: "技术支持 (Tech Lead)",
-            img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=60",
-        },
-        {
-            name: "Jerome Bell",
-            role: "客户经理 (Sales)",
-            img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=60",
-        },
-    ];
+    import { t } from "$lib/i18n";
+    import { MapPin, Mail, Phone } from "lucide-svelte";
 </script>
 
 <section class="py-24 bg-white text-[#0f172a] font-['Sarabun']">
@@ -29,45 +9,67 @@
             <h2
                 class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4"
             >
-                专业团队 (Our Team)
+                {$t.team.label}
             </h2>
             <h3 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
-                遇见我们的 <br /> 专家团队
+                {$t.team.title}
             </h3>
             <p class="text-gray-500">
-                我们拥有一支经验丰富的专业团队，时刻准备着为您解决物流难题。
+                {$t.team.description}
             </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {#each team as member}
-                <div class="group relative overflow-hidden rounded-xl">
+            {#each $t.team.items as member}
+                <div
+                    class="group h-[500px] relative overflow-hidden rounded-3xl shadow-lg border border-gray-100"
+                >
+                    <!-- Member Image -->
                     <img
                         src={member.img}
                         alt={member.name}
-                        class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     />
 
-                    <!-- Hover Overlay -->
+                    <!-- Content Overlay - Static Bottom -->
                     <div
-                        class="absolute inset-0 bg-[#0f172a]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+                        class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/80 to-transparent p-8 pt-20"
                     >
-                        <h4 class="text-white text-xl font-bold">
+                        <h4 class="text-white text-2xl font-bold mb-1">
                             {member.name}
                         </h4>
-                        <p
-                            class="text-[#3b82f6] text-sm uppercase tracking-wider"
+                        <div
+                            class="flex items-center text-[#3b82f6] text-xs font-bold uppercase tracking-widest mb-4"
                         >
+                            <MapPin class="w-3 h-3 mr-1" />
                             {member.role}
-                        </p>
-                        <div class="flex space-x-3 mt-4">
-                            <!-- Social Icons Placeholder -->
-                            <div
-                                class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-[#3b82f6] hover:text-white transition-colors cursor-pointer"
-                            >
-                                <span class="text-xs">We</span>
-                            </div>
                         </div>
+
+                        <!-- Hoverable Contact Info -->
+                        <div
+                            class="flex space-x-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300"
+                        >
+                            <button
+                                class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#3b82f6] transition-colors"
+                            >
+                                <Mail class="w-4 h-4" />
+                            </button>
+                            <button
+                                class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#3b82f6] transition-colors"
+                            >
+                                <Phone class="w-4 h-4" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Top Badge (optional) -->
+                    <div
+                        class="absolute top-6 left-6 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full border border-white/20"
+                    >
+                        <span
+                            class="text-[10px] text-white font-bold uppercase tracking-tighter"
+                            >Verified Expert</span
+                        >
                     </div>
                 </div>
             {/each}

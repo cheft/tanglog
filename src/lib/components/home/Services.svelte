@@ -77,7 +77,7 @@
                     </p>
 
                     <!-- Arrow Button -->
-                    <a
+                    <!-- <a
                         href="#details"
                         class="inline-flex items-center justify-center w-10 h-10 border border-gray-200 rounded-full group-hover:bg-[#0f172a] group-hover:text-white group-hover:border-[#0f172a] transition-all"
                     >
@@ -95,7 +95,7 @@
                                 d="M14 5l7 7m0 0l-7 7m7-7H3"
                             />
                         </svg>
-                    </a>
+                    </a> -->
                 </div>
             {/each}
         </div>

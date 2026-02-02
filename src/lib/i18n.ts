@@ -202,6 +202,105 @@ const translations = {
       share: "分享",
       recentHistory: "最新文章",
     },
+    testimonials: {
+      label: "客户评价",
+      title: "客户对我们的真实评价",
+      items: [
+        {
+          name: "张伟",
+          role: "跨境电商 CEO",
+          text: "棠洛的空运时效非常稳，帮我们赶上了几次大促。特别是他们在洛杉矶的自营仓，一件代发速度极快。",
+          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Robert Miller",
+          role: "Logistics Manager",
+          text: "Reliable partner for our trans-pacific shipments. Exceptional communication and their tracking system is top-notch.",
+          img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+        },
+        {
+          name: "陈琳",
+          role: "精品时尚店主",
+          text: "海运拼箱很省心，客服全程跟踪。作为一个小卖家，我最看重的是安全和透明的收费，棠洛做到了。",
+          img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Jessica Brown",
+          role: "E-comm Entrepreneur",
+          text: "TangLog simplified my supply chain. Their customer service team is available 24/7 and always solves issues fast.",
+          img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+        },
+        {
+          name: "李军",
+          role: "大件家具贸易商",
+          text: "超大件运输一直是我们的痛点，但棠洛的美国卡派服务非常专业，预约送货上门帮了我们大忙。",
+          img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=200&h=200&fit=crop",
+        },
+        {
+          name: "David Williams",
+          role: "Procurement Director",
+          text: "Best ocean freight rates we've found in years. Their dual-company presence gives us great peace of mind.",
+          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+        },
+      ],
+    },
+    team: {
+      label: "专业团队",
+      title: "遇见我们的专家团队",
+      description: "我们拥有一支经验丰富的专业团队，时刻准备着为您解决物流难题。",
+      items: [
+        {
+          name: "林浩然",
+          role: "运营总监 (深圳)",
+          img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+        },
+        {
+          name: "王强",
+          role: "客户经理 (深圳)",
+          img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop",
+        },
+        {
+          name: "刘洋",
+          role: "客户经理 (深圳)",
+          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop",
+        },
+        {
+          name: "陈淑菲",
+          role: "客户经理 (洛杉矶)",
+          img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+        },
+      ],
+    },
+    faq: {
+      label: "常见问题",
+      title: "关于物流的常见疑问",
+      items: [
+        {
+          q: "如何追踪我的订单状态？",
+          a: "您可以在首页的搜索框中输入运单号，或者通过我们的实时追踪页面查看最新动态。",
+        },
+        {
+          q: "海运和空运的时效大概是多久？",
+          a: "美西海运一般15-20天，美东30天左右；空运特快3-5天，经济线7-10天。",
+        },
+        {
+          q: "是否提供货物保险服务？",
+          a: "是的，我们建议并提供全面的货物运输保险，破损丢失按价值赔付，保障您的货物安全。",
+        },
+        {
+          q: "支持哪些支付方式？",
+          a: "支持银行对公转账、支付宝、微信支付以及部分渠道的货到付款。",
+        },
+        {
+          q: "如何计算货物的计费重量？",
+          a: "计费重取实际重量与体积重量中的较大值。体积重量计算公式通常为：长*宽*高/6000。",
+        },
+        {
+          q: "大件家具可以派送上楼吗？",
+          a: "可以。我们的美国卡车团队提供 White Glove 服务，包括预约送货及搬运上楼。",
+        },
+      ],
+    },
     zip: {
       title: "美国地址与邮编查询",
       description: "查询美国地址类型（商业/住宅）以及邮编偏远附加费情况。",
@@ -587,6 +686,105 @@ const translations = {
       publishedOn: "Published on",
       share: "Share",
       recentHistory: "Recent Posts",
+    },
+    testimonials: {
+      label: "Testimonials",
+      title: "What Our Clients Say",
+      items: [
+        {
+          name: "Zhang Wei",
+          role: "E-comm CEO",
+          text: "TangLog's air freight is incredibly stable. Their self-operated warehouse in LA provides lightning-fast fulfillment.",
+          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Robert Miller",
+          role: "Logistics Manager",
+          text: "Reliable partner for our trans-pacific shipments. Exceptional communication and their tracking system is top-notch.",
+          img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Chen Lin",
+          role: "Boutique Owner",
+          text: "Shipping LCL has never been easier. As a small seller, I value safety and transparent pricing, and TangLog delivers.",
+          img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Jessica Brown",
+          role: "E-comm Entrepreneur",
+          text: "TangLog simplified my supply chain. Their customer service team is available 24/7 and always solves issues fast.",
+          img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+        },
+        {
+          name: "Li Jun",
+          role: "Furniture Trader",
+          text: "Oversized shipping was always a headache until we found TangLog. Their US trucking service is professional and reliable.",
+          img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=200&h=200&fit=crop",
+        },
+        {
+          name: "David Williams",
+          role: "Procurement Director",
+          text: "Best ocean freight rates we've found in years. Their dual-company presence gives us great peace of mind.",
+          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+        },
+      ],
+    },
+    team: {
+      label: "Expert Team",
+      title: "Meet Our Experts",
+      description: "Our experienced team is always ready to solve your logistics challenges.",
+      items: [
+        {
+          name: "Lin Haonan",
+          role: "Op Director (SZ)",
+          img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+        },
+        {
+          name: "Wang Qiang",
+          role: "Account Manager (SZ)",
+          img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop",
+        },
+        {
+          name: "Liu Yang",
+          role: "Account Manager (SZ)",
+          img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop",
+        },
+        {
+          name: "Sophie Chen",
+          role: "Account Manager (LA)",
+          img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+        },
+      ],
+    },
+    faq: {
+      label: "FAQ",
+      title: "Common Questions",
+      items: [
+        {
+          q: "How can I track my order?",
+          a: "Enter your tracking number in the search box on our homepage or visit our real-time tracking page.",
+        },
+        {
+          q: "What are the shipping times for Sea and Air?",
+          a: "Sea (West) is 15-20 days, East is ~30 days. Air Express is 3-5 days, Economic is 7-10 days.",
+        },
+        {
+          q: "Do you provide cargo insurance?",
+          a: "Yes, we highly recommend and provide comprehensive insurance covering damage or loss based on value.",
+        },
+        {
+          q: "What payment methods do you support?",
+          a: "We support bank transfers, Alipay, WeChat Pay, and COD for specific channels.",
+        },
+        {
+          q: "How is billable weight calculated?",
+          a: "We use the greater of actual weight or volumetric weight. Volume formula: L*W*H/6000.",
+        },
+        {
+          q: "Can you deliver oversized furniture upstairs?",
+          a: "Yes. Our US trucking team provides White Glove services including scheduled delivery and room-of-choice.",
+        },
+      ],
     },
     zip: {
       title: "US Address & Zip Search",
