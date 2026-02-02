@@ -50,41 +50,28 @@
                 自营海外仓一件代发，为您的跨境生意保驾护航。
             </p>
 
-            <!-- Track Order Bar -->
-            <div
-                class="max-w-xl bg-white/10 backdrop-blur-md p-2 rounded-full flex items-center border border-white/20"
-            >
-                <div class="pl-6 pr-4">
+            <!-- Track Order Button -->
+            <div>
+                <a
+                    href="/tracking"
+                    class="inline-flex items-center text-lg font-bold bg-[#EFC743] text-black py-4 px-10 rounded-full hover:bg-white transition-colors shadow-lg shadow-[#EFC743]/20"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="1.5"
+                        stroke-width="2"
                         stroke="currentColor"
-                        class="w-6 h-6 text-[#EFC743]"
+                        class="w-6 h-6 mr-3"
                     >
                         <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                         />
                     </svg>
-                </div>
-                <input
-                    type="text"
-                    placeholder="输入运单号查询 (Track Order)"
-                    class="bg-transparent border-none outline-none text-white placeholder-white/30 flex-1 h-12 text-lg focus:ring-0"
-                />
-                <button
-                    class="bg-[#EFC743] text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors cursor-pointer"
-                >
-                    立即查询
-                </button>
+                    查询货物 (Track Order)
+                </a>
             </div>
         </div>
 

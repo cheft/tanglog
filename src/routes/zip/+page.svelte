@@ -171,27 +171,27 @@
     <!-- Search Box -->
     <div class="relative mb-12" bind:this={searchContainer}>
       <div
-        class="bg-white p-2 rounded-3xl shadow-xl border border-slate-100 flex flex-col md:flex-row gap-2 relative z-20"
+        class="bg-slate-900/60 backdrop-blur-xl p-2 rounded-full shadow-2xl border border-white/10 flex flex-col md:flex-row gap-2 relative z-20"
       >
         <div class="relative grow">
           <div
-            class="absolute inset-y-0 left-4 flex items-center pointer-events-none"
+            class="absolute inset-y-0 left-6 flex items-center pointer-events-none"
           >
-            <Search class="w-5 h-5 text-slate-400" />
+            <Search class="w-6 h-6 text-[#EFC743]" />
           </div>
           <input
             type="text"
             bind:value={query}
-            on:keydown={handleKeydown}
-            on:focus={() => (showHistory = true)}
+            onkeydown={handleKeydown}
+            onfocus={() => (showHistory = true)}
             placeholder={$t.zip.placeholder}
-            class="w-full pl-12 pr-4 py-5 rounded-2xl bg-white text-slate-900 focus:outline-none text-lg"
+            class="w-full pl-16 pr-4 py-4 rounded-full bg-transparent text-white placeholder-white/30 focus:outline-none text-lg font-medium"
           />
         </div>
         <button
-          on:click={handleSearch}
+          onclick={handleSearch}
           disabled={loading}
-          class="bg-primary-600 hover:bg-primary-700 disabled:bg-slate-300 text-white font-bold px-8 py-5 rounded-2xl transition-all shadow-lg shadow-primary-900/20 flex items-center justify-center min-w-[160px]"
+          class="bg-[#EFC743] hover:bg-white disabled:bg-slate-500 disabled:opacity-50 text-black font-bold px-10 py-4 rounded-full transition-all shadow-lg flex items-center justify-center min-w-[160px]"
         >
           {#if loading}
             <Loader2 class="w-5 h-5 mr-2 animate-spin" />
@@ -216,7 +216,10 @@
               {$t.zip.recentHistory}
             </div>
             <button
-              on:click|stopPropagation={clearAllHistory}
+              onclick={(e) => {
+                e.stopPropagation();
+                clearAllHistory();
+              }}
               class="text-primary-500 hover:text-primary-700 transition-colors normal-case font-bold"
             >
               {$t.zip.clearAll}
@@ -228,7 +231,7 @@
                 class="w-full h-full flex items-center justify-between group px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer"
               >
                 <button
-                  on:click={() => handleSelectHistory(item)}
+                  onclick={() => handleSelectHistory(item)}
                   class="flex items-center grow min-w-0 text-left"
                 >
                   <MapPin class="w-4 h-4 text-slate-300 mr-3 shrink-0" />
@@ -237,7 +240,10 @@
                 </button>
                 <div class="flex items-center ml-4 shrink-0 space-x-2">
                   <button
-                    on:click|stopPropagation={() => removeFromHistory(item)}
+                    onclick={(e) => {
+                      e.stopPropagation();
+                      removeFromHistory(item);
+                    }}
                     class="p-1 rounded-full hover:bg-red-50 text-slate-300 hover:text-red-500 transition-all opacity-0 group-hover:opacity-100"
                   >
                     <X class="w-4 h-4" />
@@ -402,7 +408,7 @@
                     </div>
                   </div>
                   <button
-                    on:click={copyAddress}
+                    onclick={copyAddress}
                     class="flex items-center px-6 py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-black transition-all"
                   >
                     {#if copied}
