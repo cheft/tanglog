@@ -22,7 +22,7 @@ export interface BilingualPost {
 
 // Use import.meta.glob to eagerly load all markdown files in the posts directory.
 // This works in both dev and production (Vercel) as Vite handles the bundling.
-const postFiles = import.meta.glob("../../posts/*.md", {
+const postFiles = import.meta.glob("/src/posts/*.md", {
   eager: true,
   query: "?raw",
   import: "default",

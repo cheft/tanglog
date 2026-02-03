@@ -5,7 +5,7 @@ export const load: PageServerLoad = async () => {
   const posts = await getPosts();
 
   const debugKeys = getPostKeys();
-  const fileEntries = Object.entries(import.meta.glob("../../posts/*.md", { eager: true, query: "?raw", import: "default" }));
+  const fileEntries = Object.entries(import.meta.glob("/src/posts/*.md", { eager: true, query: "?raw", import: "default" }));
   const debugInfo = fileEntries.map(([path, content]) => ({
     path,
     type: typeof content,
