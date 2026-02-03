@@ -224,10 +224,10 @@ const translations = {
       title: "客户对我们的真实评价",
       items: [
         {
-          name: "张伟",
+          name: "张佳伟",
           role: "跨境电商 CEO",
           text: "棠洛的空运时效非常稳，帮我们赶上了几次大促。特别是他们在洛杉矶的自营仓，一件代发速度极快。",
-          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "Robert Miller",
@@ -239,7 +239,7 @@ const translations = {
           name: "陈之琳",
           role: "精品时尚店主",
           text: "海运拼箱很省心，客服全程跟踪。作为一个小卖家，我最看重的是安全和透明的收费，棠洛做到了。",
-          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "Jessica Brown",
@@ -251,7 +251,7 @@ const translations = {
           name: "李志军",
           role: "大件家具贸易商",
           text: "超大件运输一直是我们的痛点，但棠洛的美国卡派服务非常专业，预约送货上门帮了我们大忙。",
-          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "David Williams",
