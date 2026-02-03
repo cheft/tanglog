@@ -56,6 +56,8 @@ const translations = {
       fetchError: "获取物流信息失败，请重试。",
       recentHistory: "最近查询记录",
       clearAll: "清空全部",
+      helpTitle: "追踪遇到问题？",
+      contactSupport: "联系我们的客服团队",
     },
     stats: {
       years: "年行业经验",
@@ -533,6 +535,8 @@ const translations = {
       fetchError: "Failed to fetch tracking information. Please try again.",
       recentHistory: "Recent Search History",
       clearAll: "Clear All",
+      helpTitle: "Having trouble tracking your cargo?",
+      contactSupport: "Contact our support team",
     },
     stats: {
       years: "Years of Industry Experience",

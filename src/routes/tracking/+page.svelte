@@ -389,9 +389,9 @@
 
     <!-- Help Section -->
     <div class="my-16 text-center">
-      <p class="text-slate-500 mb-4">Having trouble tracking your cargo?</p>
+      <p class="text-slate-500 mb-4">{$t.tracking.helpTitle}</p>
       <a href="/#contact" class="text-primary-600 font-bold hover:underline"
-        >Contact our support team</a
+        >{$t.tracking.contactSupport}</a
       >
     </div>
   </div>
