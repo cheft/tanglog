@@ -77,6 +77,10 @@ export async function getPosts(): Promise<BilingualPost[]> {
     });
 }
 
+export function getPostKeys() {
+  return Object.keys(postFiles);
+}
+
 export async function getPost(slug: string): Promise<BilingualPost | null> {
   const post: BilingualPost = { slug, date: "", image: "" };
   let found = false;
