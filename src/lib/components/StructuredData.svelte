@@ -5,9 +5,9 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "棠洛国际物流有限公司",
-    alternateName: "Lofeng International Logistics Co., Ltd.",
-    url: "https://www.loflog.com",
-    logo: "https://www.loflog.com/logo.png",
+    alternateName: "Tanglog International Logistics Co., Ltd.",
+    url: "https://www.tanglog.com",
+    logo: "https://www.tanglog.com/logo.png",
     description:
       $currentLang === "zh"
         ? "专业的中美跨境物流服务提供商，提供国际快递、空运、海运、仓储和一件代发服务"
@@ -39,7 +39,7 @@
       },
     ],
     sameAs: [
-      "https://www.youtube.com/@LofengNow/shorts",
+      "https://www.youtube.com/@TanglogNow/shorts",
       "https://www.douyin.com/user/MS4wLjABAAAArcg1J0RxAXw2BNbl80No5f54briaQeB3xcN3xe5klvQ2gsG2o1BjEeGcgMDopYJZ",
     ],
   });
@@ -47,11 +47,11 @@
   const localBusinessSchema = $derived({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.loflog.com/#localbusiness",
+    "@id": "https://www.tanglog.com/#localbusiness",
     name: "棠洛国际物流",
-    image: "https://www.loflog.com/warehouse.jpg",
+    image: "https://www.tanglog.com/warehouse.jpg",
     telephone: "+86-177-2256-1770",
-    email: "services@loflog.com",
+    email: "services@tanglog.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "新田社区新塘路28号天佑第二工业区B栋107",
@@ -160,7 +160,7 @@
         "@type": "ListItem",
         position: 1,
         name: $currentLang === "zh" ? "首页" : "Home",
-        item: "https://www.loflog.com",
+        item: "https://www.tanglog.com",
       },
     ],
   });

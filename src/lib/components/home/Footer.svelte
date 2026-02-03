@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { t } from "$lib/i18n";
+    import { t, currentLang } from "$lib/i18n";
 </script>
 
 <footer class="pt-24 pb-12 bg-[#0f172a] text-white font-['Sarabun']">
@@ -20,7 +20,9 @@
                 </p>
                 <div class="text-gray-400 text-sm">
                     <p class="font-bold text-white mb-2">
-                        深圳市总部 (Shenzhen HQ):
+                        {$currentLang === "zh"
+                            ? "深圳市总部 (Shenzhen HQ):"
+                            : "Shenzhen HQ:"}
                     </p>
                     <p>{$t.footer.address}</p>
                 </div>
@@ -34,35 +36,35 @@
                 <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
-                            href="/#services"
+                            href="/{$currentLang}/#services"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.services}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/#testimonials"
+                            href="/{$currentLang}/#testimonials"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.testimonials}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/#team"
+                            href="/{$currentLang}/#team"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.team}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/#blog"
+                            href="/{$currentLang}/#blog"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.blog}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/#faq"
+                            href="/{$currentLang}/#faq"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.faq}</a
                         >
@@ -78,21 +80,21 @@
                 <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
-                            href="/tracking"
+                            href="/{$currentLang}/tracking"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.tracking}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/zip"
+                            href="/{$currentLang}/zip"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.zip}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/blog"
+                            href="/{$currentLang}/blog"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.blog}</a
                         >

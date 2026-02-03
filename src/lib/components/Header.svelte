@@ -18,14 +18,13 @@
     const newLang = $currentLang === "zh" ? "en" : "zh";
     let path = $page.url.pathname;
 
-    if (newLang === "zh") {
-      if (!path.startsWith("/zh")) {
-        path = `/zh${path === "/" ? "" : path}`;
-      }
+    // Standardized localization routing
+    if (path.startsWith("/zh")) {
+      path = path.replace(/^\/zh/, `/${newLang}`);
+    } else if (path.startsWith("/en")) {
+      path = path.replace(/^\/en/, `/${newLang}`);
     } else {
-      if (path.startsWith("/zh")) {
-        path = path.replace(/^\/zh/, "") || "/";
-      }
+      path = `/${newLang}${path === "/" ? "" : path}`;
     }
 
     goto(path);
@@ -34,10 +33,10 @@
   $: langPrefix = $currentLang === "zh" ? "/zh" : "";
 
   $: navLinks = [
-    { name: $t.nav.home, href: `${langPrefix}/#home` },
-    { name: $t.tracking.title, href: `${langPrefix}/tracking` },
-    { name: $t.nav.zip, href: `${langPrefix}/zip` },
-    { name: $t.nav.blog, href: `${langPrefix}/blog` },
+    { name: $t.nav.home, href: `/${$currentLang}/#home` },
+    { name: $t.tracking.title, href: `/${$currentLang}/tracking` },
+    { name: $t.nav.zip, href: `/${$currentLang}/zip` },
+    { name: $t.nav.blog, href: `/${$currentLang}/blog` },
   ];
 
   onMount(() => {
@@ -166,7 +165,7 @@
       <div class="relative flex items-center justify-between px-6 py-6">
         <div class="flex items-center gap-2">
           <span class="text-xs font-bold tracking-widest text-slate-400"
-            >MENU</span
+            >{$t.nav.menu}</span
           >
         </div>
         <button
@@ -263,9 +262,7 @@
       <div class="text-center">
         <h3 class="text-2xl font-bold mb-2 text-white">{$t.hero.cta_wechat}</h3>
         <p class="text-white/60 text-sm mb-6">
-          {$currentLang === "zh"
-            ? "扫码添加专属客服，获取 1 对 1 咨询服务"
-            : "Scan to add support for 1-on-1 consultation"}
+          {$t.nav.wechatAction}
         </p>
 
         <div class="bg-white rounded-2xl inline-block mb-6 overflow-hidden">

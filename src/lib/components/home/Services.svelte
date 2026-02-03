@@ -1,30 +1,31 @@
 <script lang="ts">
     import { Ship, Plane, Truck, Package } from "lucide-svelte";
+    import { t, currentLang } from "$lib/i18n";
 
-    const services = [
+    $: services = [
         {
-            title: "海运整柜/拼箱",
+            title: $t.services.items[1].title, // Ocean Freight (indexed differently in i18n.ts)
             enTitle: "Ocean Freight",
             icon: Ship,
-            desc: "经济实惠，美西15天达，美东30天。大宗货物首选，节省40%+成本，覆盖全美主要港口。",
+            desc: $t.services.items[1].description,
         },
         {
-            title: "国际快递/空运",
+            title: $t.services.items[0].title, // International Express
             enTitle: "Air Freight",
             icon: Plane,
-            desc: "DHL/FedEx/UPS一级代理，3-7天全美达。全程实时追踪，一站式双清，时效稳定。",
+            desc: $t.services.items[0].description,
         },
         {
-            title: "美国本土派送",
+            title: $t.services.items[2].title, // US Domestic
             enTitle: "Road Freight",
             icon: Truck,
-            desc: "自有卡车车队，全美覆盖。专业处理大件家具，提供末端派送及预约入户服务。",
+            desc: $t.services.items[2].description,
         },
         {
-            title: "一件代发/海外仓",
+            title: $t.services.items[3].title, // Dropshipping
             enTitle: "Dropshipping",
             icon: Package,
-            desc: "自营海外仓配方案，极速响应。智能库存管理，专业售后处理，助力跨境电商。",
+            desc: $t.services.items[3].description,
         },
     ];
 </script>
@@ -37,12 +38,12 @@
                 <h2
                     class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4"
                 >
-                    核心服务 (Our Services)
+                    {$t.services.label}
                 </h2>
                 <h3
                     class="text-3xl md:text-5xl font-bold leading-tight text-[#0f172a]"
                 >
-                    为您提供安全 & <br /> 可靠的物流服务
+                    {$t.services.title}
                 </h3>
             </div>
         </div>
@@ -75,27 +76,6 @@
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         {service.desc}
                     </p>
-
-                    <!-- Arrow Button -->
-                    <!-- <a
-                        href="#details"
-                        class="inline-flex items-center justify-center w-10 h-10 border border-gray-200 rounded-full group-hover:bg-[#0f172a] group-hover:text-white group-hover:border-[#0f172a] transition-all"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            />
-                        </svg>
-                    </a> -->
                 </div>
             {/each}
         </div>

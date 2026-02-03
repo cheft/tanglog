@@ -42,8 +42,8 @@
     pathNoLang === "" || pathNoLang === "/" ? "" : pathNoLang,
   );
 
-  let enUrl = $derived(`https://www.loflog.com${cleanPath}`);
-  let zhUrl = $derived(`https://www.loflog.com/zh${cleanPath}`);
+  let enUrl = $derived(`https://www.tanglog.com${cleanPath}`);
+  let zhUrl = $derived(`https://www.tanglog.com/zh${cleanPath}`);
 </script>
 
 <svelte:head>
@@ -78,7 +78,7 @@
   />
   <meta property="og:title" content={finalOgTitle} />
   <meta property="og:description" content={finalOgDescription} />
-  <meta property="og:image" content="https://www.loflog.com/og-image.jpg" />
+  <meta property="og:image" content="https://www.tanglog.com/og-image.jpg" />
   <meta property="og:site_name" content={$t.companyName} />
   <meta
     property="og:locale"
@@ -100,7 +100,7 @@
   <meta property="twitter:description" content={finalOgDescription} />
   <meta
     property="twitter:image"
-    content="https://www.loflog.com/og-image.jpg"
+    content="https://www.tanglog.com/og-image.jpg"
   />
 
   <!-- Additional SEO -->

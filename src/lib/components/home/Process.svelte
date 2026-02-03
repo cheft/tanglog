@@ -1,24 +1,38 @@
 <script lang="ts">
-    const steps = [
+    import { t, currentLang } from "$lib/i18n";
+
+    $: steps = [
         {
             num: "01",
-            title: "输入货物详情",
-            desc: "在系统中输入您的货物重量、尺寸和目的地信息。",
+            title: $currentLang === "zh" ? "提供信息" : "Provide Info",
+            desc:
+                $currentLang === "zh"
+                    ? "在系统中提供您的货物重量、尺寸和目的地信息。"
+                    : "Provide your cargo weight, dimensions and destination details.",
         },
         {
             num: "02",
-            title: "支付运费",
-            desc: "选择您偏好的支付方式（支付宝/微信/银行转账）并完成支付。",
+            title: $currentLang === "zh" ? "支付运费" : "Payment",
+            desc:
+                $currentLang === "zh"
+                    ? "选择您偏好的支付方式（支付宝/微信/银行转账）并完成支付。"
+                    : "Choose your preferred payment method and complete the payment.",
         },
         {
             num: "03",
-            title: "安排发货",
-            desc: "我们将安排上门取件或您可以送至指定仓库，开始运输。",
+            title: $currentLang === "zh" ? "安排发货" : "Shipment",
+            desc:
+                $currentLang === "zh"
+                    ? "我们将安排上门取件或您可以送至指定仓库，开始运输。"
+                    : "We arrange pickup or you send to our warehouse to start transit.",
         },
         {
             num: "04",
-            title: "成功送达",
-            desc: "全程实时追踪货物状态，直到安全送达目的地。",
+            title: $currentLang === "zh" ? "成功送达" : "Delivery",
+            desc:
+                $currentLang === "zh"
+                    ? "全程实时追踪货物状态，直到安全送达目的地。"
+                    : "Track your shipment in real-time until it safely reaches its destination.",
         },
     ];
 </script>
@@ -27,10 +41,19 @@
     <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 mb-16 items-start">
             <h2 class="text-4xl md:text-5xl font-bold leading-tight">
-                我们的服务流程 <br /> 简单 & 便捷
+                {$currentLang === "zh"
+                    ? "我们的服务流程"
+                    : "Our Service Process"} <br />
+                <span class="text-[#EFC743]"
+                    >{$currentLang === "zh"
+                        ? "简单 & 便捷"
+                        : "Simple & Efficient"}</span
+                >
             </h2>
             <p class="text-white/80 leading-relaxed max-w-lg">
-                我们优化了每一个操作环节，确为您提供无忧的物流体验。只需遵循以下简单步骤，即可开启全球货运之旅。
+                {$currentLang === "zh"
+                    ? "我们优化了每一个操作环节，为您提供无忧的物流体验。只需遵循以下简单步骤，即可开启全球货运之旅。"
+                    : "We have optimized every operational step to provide a hassle-free logistics experience. Just follow these simple steps to start your shipping."}
             </p>
         </div>
 

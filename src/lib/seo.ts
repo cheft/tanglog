@@ -4,27 +4,27 @@ import { currentLang } from "./i18n";
 export const seoData = derived(currentLang, ($currentLang) => {
   const data = {
     zh: {
-      title: "棠洛国际物流 - 专业中美跨境物流服务 | 美国海运空运仓储",
+      title: "棠洛国际物流 - 中美跨境物流专家 | 美国海运空运自营海外仓",
       description:
-        "棠洛国际物流提供专业的中美跨境物流服务，包括国际快递、空运、海运、美国仓储和一件代发。中美双公司运营，服务1000+客户，准时率98%，价格优惠20%。深圳-洛杉矶直达，3-15天送达全美。",
+        "棠洛国际物流（Tanglog）专注中美跨境物流，提供国际快递、空运、海运、美国自营仓一件代发服务。中美双公司认证，准时率98%，一手价格。深圳至洛杉矶极速直达，助力跨境电商高效出海。",
       keywords:
-        "中美物流,美国海运,国际快递,跨境物流,美国仓储,一件代发,洛杉矶仓库,深圳国际物流,中国到美国物流,海运拼箱,空运服务",
-      ogTitle: "棠洛国际物流 - 中美跨境物流专家",
+        "棠洛国际物流,中美物流,美国海运,美国空运,美森快船,美国海外仓,一件代发,亚马逊FBA头程,跨境电商物流,国际货代",
+      ogTitle: "棠洛国际物流 - 中美跨境物流领航者",
       ogDescription:
-        "专业中美跨境物流服务，自营海外仓，一件代发，为您的跨境业务保驾护航。",
-      author: "棠洛国际物流有限公司",
+        "专业中美物流解决方案，全链路可视追踪，自营海外仓助力品牌出海。",
+      author: "棠洛国际物流",
     },
     en: {
       title:
-        "Lofeng International Logistics - China-US Cross-Border Logistics | Ocean & Air Freight",
+        "Tanglog Logistics - Expert China-US Cross-Border Logistics Solutions",
       description:
-        "Lofeng International Logistics offers professional China-US cross-border logistics services including international express, air freight, ocean freight, US warehousing and dropshipping. Dual companies in China and US, serving 1000+ clients, 98% on-time rate, 20% cost savings. Shenzhen-LA direct, 3-15 days US-wide delivery.",
+        "Tanglog International Logistics specializing in China-US logistics, including Express, Air & Ocean Freight, and US fulfillment. Dual-company presence ensuring 98% on-time delivery. Direct Shenzhen to LA routes.",
       keywords:
-        "China US logistics,ocean freight,international express,cross-border logistics,US warehouse,dropshipping,Los Angeles warehouse,Shenzhen logistics,China to USA shipping,LCL shipping,air freight services",
-      ogTitle: "Lofeng International Logistics - China-US Logistics Expert",
+        "Tanglog, China US logistics, ocean freight, international shipping, US fulfillment, Amazon FBA, cross-border shipping, air freight China to US",
+      ogTitle: "Tanglog Logistics - China-US Shipping Experts",
       ogDescription:
-        "Professional China-US cross-border logistics with self-operated overseas warehouses and dropshipping services.",
-      author: "Lofeng International Logistics Co., Ltd.",
+        "Seamless China-US logistics with self-operated warehouses and full-track visibility.",
+      author: "Tanglog International Logistics",
     },
   };
 

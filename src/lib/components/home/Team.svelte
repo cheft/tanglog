@@ -68,7 +68,9 @@
                     >
                         <span
                             class="text-[10px] text-white font-bold uppercase tracking-tighter"
-                            >Verified Expert</span
+                            >{$t.companyName.includes("棠洛")
+                                ? "专业认证"
+                                : "Verified Expert"}</span
                         >
                     </div>
                 </div>

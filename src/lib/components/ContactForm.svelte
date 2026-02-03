@@ -18,7 +18,7 @@
       `姓名：${formData.name}\n电话：${formData.phone}\n邮箱：${formData.email}\n咨询内容：${formData.message}`,
     );
     // 生成 mailto 链接并跳转
-    window.location.href = `mailto:services@loflog.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:services@tanglog.com?subject=${subject}&body=${body}`;
   }
 </script>
 

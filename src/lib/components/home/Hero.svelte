@@ -14,13 +14,25 @@
 
     // Stats data derived from About section
     $: stats = [
-        { label: $t.stats.clients, value: "1000+", sub: "Global Clients" },
-        { label: $t.stats.satisfaction, value: "99.8%", sub: "Satisfaction" },
-        { label: $t.stats.support, value: "24/7", sub: "Online Support" },
         {
-            label: $currentLang === "zh" ? "年行业经验" : "Years Experience",
+            label: $t.stats.clients,
+            value: "1000+",
+            sub: $currentLang === "zh" ? "全球客户" : "Global Clients",
+        },
+        {
+            label: $t.stats.satisfaction,
+            value: "99.8%",
+            sub: $currentLang === "zh" ? "服务好评" : "Satisfaction",
+        },
+        {
+            label: $t.stats.support,
+            value: "24/7",
+            sub: $currentLang === "zh" ? "在线支持" : "Online Support",
+        },
+        {
+            label: $t.stats.years,
             value: "3+",
-            sub: "Industry Expert",
+            sub: $currentLang === "zh" ? "行业专家" : "Industry Expert",
         },
     ];
 
@@ -78,7 +90,7 @@
                     <br class="hidden md:block" />
                     {$currentLang === "zh"
                         ? "我们深知每一份托付的重量，致力于为您提供最优质的一站式物流体验。"
-                        : "We understand the weight of every shipment and are committed to providing you with the best one-stop logistics experience."}
+                        : "We understand the importance of every package and strive to provide a premium logistics experience."}
                 </p>
 
                 <!-- Action Buttons -->
@@ -94,7 +106,7 @@
                     </button>
 
                     <a
-                        href="/tracking"
+                        href="/{$currentLang}/tracking"
                         class="inline-flex items-center text-base font-bold bg-white/10 backdrop-blur-md text-white border border-white/20 py-4 px-8 rounded-full hover:bg-white hover:text-[#0f172a] transition-all duration-300 group"
                     >
                         <Search
@@ -213,9 +225,7 @@
             <div class="text-center">
                 <h3 class="text-2xl font-bold mb-2">{$t.hero.cta_wechat}</h3>
                 <p class="text-white/60 text-sm mb-6">
-                    {$currentLang === "zh"
-                        ? "扫码添加专属客服，获取 1 对 1 咨询服务"
-                        : "Scan to add support for 1-on-1 consultation"}
+                    {$t.nav.wechatAction}
                 </p>
 
                 <div class="bg-white rounded-2xl inline-block mb-6">

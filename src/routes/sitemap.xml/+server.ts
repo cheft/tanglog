@@ -2,59 +2,54 @@ import { getPosts } from "$lib/utils/posts";
 
 export async function GET() {
   const posts = await getPosts();
-  const site = "https://www.loflog.com";
+  const site = "https://www.tanglog.com";
 
-  // These are the core static pages we know exist or will exist
-  const pages = [
-    { url: "/", changefreq: "weekly", priority: 1.0 },
-    { url: "/tracking", changefreq: "daily", priority: 0.9 },
-    { url: "/shipping-calculator", changefreq: "weekly", priority: 0.9 },
-    { url: "/zip", changefreq: "weekly", priority: 0.8 },
-    { url: "/blog", changefreq: "daily", priority: 0.8 },
-  ];
+  // These are the core static pages we know exist
+  const corePaths = ["", "/tracking", "/zip", "/blog"];
+  const langs = ["zh", "en"];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  ${pages
+  ${corePaths
+      .flatMap((path) =>
+        langs.map((lang) => ({
+          url: `/${lang}${path}`,
+          lang,
+          path,
+          priority: path === "" ? 1.0 : 0.8,
+        }))
+      )
       .map(
-        (page) => `
+        (item) => `
   <url>
-    <loc>${site}${page.url}</loc>
-    <changefreq>${page.changefreq}</changefreq>
-    <priority>${page.priority}</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="${site}${page.url}" />
-    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh${page.url === "/" ? "" : page.url
-          }" />
-  </url>
-  <url>
-    <loc>${site}/zh${page.url === "/" ? "" : page.url}</loc>
-    <changefreq>${page.changefreq}</changefreq>
-    <priority>${page.priority}</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="${site}${page.url}" />
-    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh${page.url === "/" ? "" : page.url
-          }" />
+    <loc>${site}${item.url}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>${item.priority}</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh${item.path}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${site}/en${item.path}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${site}/zh${item.path}" />
   </url>`
       )
       .join("")}
   ${posts
+      .flatMap((post) =>
+        langs.map((lang) => ({
+          url: `/${lang}/blog/${post.slug}`,
+          lang,
+          slug: post.slug,
+          date: post.date,
+        }))
+      )
       .map(
-        (post) => `
+        (item) => `
   <url>
-    <loc>${site}/blog/${post.slug}</loc>
-    <lastmod>${post.date}</lastmod>
+    <loc>${site}${item.url}</loc>
+    <lastmod>${item.date}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="${site}/blog/${post.slug}" />
-    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh/blog/${post.slug}" />
-  </url>
-  <url>
-    <loc>${site}/zh/blog/${post.slug}</loc>
-    <lastmod>${post.date}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="${site}/blog/${post.slug}" />
-    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh/blog/${post.slug}" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="${site}/zh/blog/${item.slug}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${site}/en/blog/${item.slug}" />
   </url>`
       )
       .join("")}

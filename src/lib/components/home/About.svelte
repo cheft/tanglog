@@ -1,9 +1,22 @@
 <script lang="ts">
-    // Simple stats data - adapted from analysis
-    const stats = [
-        { label: "全球客户", value: "1000+", sub: "Global Clients" },
-        { label: "服务满意度", value: "99.8%", sub: "Satisfaction" },
-        { label: "在线支持", value: "24/7", sub: "Online Support" },
+    import { t, currentLang } from "$lib/i18n";
+
+    $: stats = [
+        {
+            label: $t.stats.clients,
+            value: "1000+",
+            sub: $currentLang === "zh" ? "全球客户" : "Global Clients",
+        },
+        {
+            label: $t.stats.satisfaction,
+            value: "99.8%",
+            sub: $currentLang === "zh" ? "服务好评" : "Satisfaction",
+        },
+        {
+            label: $t.stats.support,
+            value: "24/7",
+            sub: $currentLang === "zh" ? "在线支持" : "Online Support",
+        },
     ];
 </script>
 
@@ -14,22 +27,23 @@
             <h2
                 class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4"
             >
-                关于我们 (About Us)
+                {$t.advantages.label}
             </h2>
             <h3 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
-                安全、可靠 & <br /> 高效的跨境物流专家
+                {$t.advantages.title}
             </h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
-                棠洛国际物流（TangLog）专注中美跨境物流服务，中美双公司认证运营。我们深知每一份托付的重量，致力于为您提供最优质的物流体验。
-                无论是国际快递、海运还是海外仓配，我们都能为您提供一站式解决方案。
+                {$t.advantages.description}
             </p>
 
             <div class="flex items-center space-x-4">
                 <a
-                    href="#about"
+                    href="/{$currentLang}/#contact"
                     class="inline-flex items-center text-sm font-bold border-b-2 border-[#0f172a] pb-1 hover:text-[#3b82f6] hover:border-[#3b82f6] transition-colors"
                 >
-                    了解更多 (Learn More)
+                    {$currentLang === "zh"
+                        ? "了解更多 (Learn More)"
+                        : "Learn More"}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4 ml-2"
@@ -69,7 +83,7 @@
             >
                 <span class="text-5xl font-bold text-[#3b82f6] mb-2">3+</span>
                 <span class="text-sm font-medium uppercase tracking-wider"
-                    >Years of <br /> Experience</span
+                    >{$t.stats.years}</span
                 >
             </div>
         </div>

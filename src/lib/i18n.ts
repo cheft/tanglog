@@ -12,10 +12,13 @@ const translations = {
       services: "服务",
       advantages: "核心优势",
       warehouse: "仓库信息",
-      blog: "博客",
+      blog: "物流博客",
       contact: "联系我们",
       consult: "免费咨询报价",
-      zip: "查地址",
+      zip: "查地址工具",
+      menu: "菜单",
+      wechatScan: "扫码添加客服",
+      wechatAction: "扫码添加专属客服，获取 1 对 1 咨询服务",
     },
     hero: {
       badge: "中美跨境物流专家",
@@ -178,7 +181,7 @@ const translations = {
         phoneNumber: "(+86)17722561770",
         phoneHours: "周一至周六 9:00-21:00",
         emailTitle: "邮件联系",
-        emailAddress: "services@loflog.com",
+        emailAddress: "services@tanglog.com",
         emailResponse: "通常在24小时内回复",
         addressTitle: "办公地址",
         addressChina: "深圳市宝安区新田社区新塘路28号天佑第二工业区B栋103-109",
@@ -205,7 +208,7 @@ const translations = {
       },
     },
     blog: {
-      label: "Loflog 博客",
+      label: "棠洛博客",
       title: "中美物流资讯",
       description:
         "关注最新的中美跨境物流动态、亚马逊FBA发货技巧以及行业趋势分析。",
@@ -485,23 +488,26 @@ const translations = {
   en: {
     companyName: "Tanglog International Logistics",
     keywords:
-      "Tanglog International Logistics, Lofeng, loflog, China-US Logistics, Shipping Calculator, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
+      "Tanglog International Logistics, Tanglog, tanglog, China-US Logistics, Shipping Calculator, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
     nav: {
       home: "Home",
       services: "Services",
       advantages: "Core Advantages",
       warehouse: "Warehouse Info",
-      blog: "Blog",
+      blog: "Logistics Blog",
       contact: "Contact Us",
       consult: "Get Free Quote",
       zip: "Address Tool",
+      menu: "MENU",
+      wechatScan: "Scan for Support",
+      wechatAction: "Scan to add support for 1-on-1 consultation",
     },
     hero: {
-      badge: "China-US Cross-Border Logistics Expert",
-      title_prefix: "Tanglog Steps In",
-      title_suffix: "Swift as the Wind to LA",
+      badge: "China-US Logistics Expert",
+      title_prefix: "Expert China-US",
+      title_suffix: "Logistics Solutions",
       description:
-        "Specializing in China-US cross-border logistics services, providing comprehensive international express, air freight, and ocean freight services. Self-operated overseas warehouses with dropshipping services to safeguard your cross-border business.",
+        "Premium China-US cross-border logistics providing end-to-end international express, air, and ocean freight. Our self-operated US warehouses offer seamless fulfillment and dropshipping services.",
       cta_primary: "Get Free Quote",
       cta_secondary: "Cargo Tracking",
       card_transport: {
@@ -595,10 +601,10 @@ const translations = {
       ],
     },
     advantages: {
-      label: "Why Choose Us",
-      title: "Why Choose Us",
+      label: "Why Tanglog",
+      title: "The Tanglog Advantage",
       description:
-        "Dual companies in China and the US, serving over 1,000+ clients. We understand the weight of every trust and are committed to providing you with the highest quality logistics experience.",
+        "With deep expertise and dual-company presence in China and the USA, we provide secure, transparent, and efficient logistics for over 1,000 global clients.",
       experience_years: "Years Experience",
       items: [
         {
@@ -676,7 +682,7 @@ const translations = {
         phoneNumber: "(+86)17722561770",
         phoneHours: "Mon-Sat 9:00-21:00",
         emailTitle: "Email Contact",
-        emailAddress: "services@loflog.com",
+        emailAddress: "services@tanglog.com",
         emailResponse: "Usually responds within 24 hours",
         addressTitle: "Office Address",
         addressChina: "深圳市宝安区新田社区新塘路28号天佑第二工业区B栋103-109",
@@ -703,7 +709,7 @@ const translations = {
       },
     },
     blog: {
-      label: "Loflog Blog",
+      label: "Tanglog Blog",
       title: "China-US Logistics Insights",
       description:
         "Stay updated with the latest China-US cross-border logistics news, Amazon FBA shipping tips, and industry trend analysis.",

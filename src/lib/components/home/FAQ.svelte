@@ -1,6 +1,6 @@
 <script lang="ts">
     import { slide } from "svelte/transition";
-    import { t } from "$lib/i18n";
+    import { t, currentLang } from "$lib/i18n";
     import { Plus, Minus, PhoneCall } from "lucide-svelte";
 
     let openIndex = 0;
@@ -36,7 +36,9 @@
                         <div
                             class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60"
                         >
-                            24/7 Support Line
+                            {$currentLang === "zh"
+                                ? "24/7 服务热线"
+                                : "24/7 Support Line"}
                         </div>
                         <div class="text-2xl font-bold tracking-tight">
                             (+86) 133 1646 3314
@@ -44,8 +46,9 @@
                     </div>
                 </div>
                 <p class="text-sm text-white/70 leading-relaxed">
-                    Our team of logistic experts are ready to answer your
-                    questions any time. Swift response guaranteed.
+                    {$currentLang === "zh"
+                        ? "我们的物流专家团队随时准备回答您的问题，确保快速响应。"
+                        : "Our team of logistic experts are ready to answer your questions any time. Swift response guaranteed."}
                 </p>
             </div>
 
@@ -58,7 +61,9 @@
                 ></div>
                 <span
                     class="text-[10px] font-bold uppercase tracking-widest text-white"
-                    >Live Support Active</span
+                    >{$currentLang === "zh"
+                        ? "在线客服活动中"
+                        : "Live Support Active"}</span
                 >
             </div>
         </div>
