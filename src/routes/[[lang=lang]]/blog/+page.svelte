@@ -74,7 +74,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {#each displayPosts as post, i}
             <article
-              class="group relative h-[540px] rounded-[10px] overflow-hidden bg-gray-900 shadow-xl"
+              class="group relative h-[540px] overflow-hidden bg-gray-900 shadow-xl rounded-xl"
               style="animation-delay: {i * 100}ms"
             >
               <a
@@ -97,7 +97,7 @@
 
                 <!-- Glassmorphism Content Box -->
                 <div
-                  class="absolute bottom-5 left-5 right-5 p-8 backdrop-blur-xl bg-black/40 border border-white/10 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-black/50"
+                  class="absolute bottom-5 left-5 right-5 p-8 backdrop-blur-xl bg-black/40 border border-white/10 rounded-xl overflow-hidden transition-all duration-300 group-hover:bg-black/50"
                 >
                   <div class="flex flex-col h-full justify-end">
                     <!-- Meta -->
