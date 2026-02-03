@@ -6,7 +6,7 @@ const translations = {
   zh: {
     companyName: "棠洛国际物流",
     keywords:
-      "棠洛国际物流, 棠洛物流, tanglog, 中美物流, 美国海外仓, 运费计算器, 国际快递, 美国空派, 美国海派, 美森快船, 以星快船, 美国海卡, 超大件运输, 跨境电商物流, 亚马逊FBA头程, 独立站物流, 一件代发, 深圳国际物流, 美国专线, 中美运费计算器, 美国运费计算器, 美国物流运费计算器, 中美物流运费计算器",
+      "棠洛国际物流, 棠洛物流, 棠洛国际, 中美专业物流, 中美物流专家, tanglog, 中美物流, 美国海外仓, 国际快递, 美国空派, 美国海派, 美森快船, 以星快船, 美国海卡, 超大件运输, 跨境电商物流, 亚马逊FBA头程, 独立站物流, 一件代发, 深圳国际物流, 美国专线",
     nav: {
       home: "首页",
       services: "服务",
@@ -489,7 +489,7 @@ const translations = {
   en: {
     companyName: "Tanglog International Logistics",
     keywords:
-      "Tanglog International Logistics, Tanglog, tanglog, China-US Logistics, Shipping Calculator, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
+      "Tanglog International Logistics, Tanglog, Tanglog Logistics, Tanglog International, China-US Professional Logistics, China-US Logistics Expert, China-US Logistics, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
     nav: {
       home: "Home",
       services: "Services",

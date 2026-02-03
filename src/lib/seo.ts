@@ -8,7 +8,7 @@ export const seoData = derived(currentLang, ($currentLang) => {
       description:
         "棠洛国际物流（Tanglog）专注中美跨境物流，提供国际快递、空运、海运、美国自营仓一件代发服务。中美双公司认证，准时率98%，一手价格。深圳至洛杉矶极速直达，助力跨境电商高效出海。",
       keywords:
-        "棠洛国际物流,中美物流,美国海运,美国空运,美森快船,美国海外仓,一件代发,亚马逊FBA头程,跨境电商物流,国际货代",
+        "棠洛国际物流,棠洛国际,棠洛物流,中美专业物流,中美物流专家,中美物流,美国海运,美国空运,美森快船,美国海外仓,一件代发,亚马逊FBA头程,跨境电商物流,国际货代",
       ogTitle: "棠洛国际物流 - 中美跨境物流领航者",
       ogDescription:
         "专业中美物流解决方案，全链路可视追踪，自营海外仓助力品牌出海。",
@@ -20,7 +20,7 @@ export const seoData = derived(currentLang, ($currentLang) => {
       description:
         "Tanglog International Logistics specializing in China-US logistics, including Express, Air & Ocean Freight, and US fulfillment. Dual-company presence ensuring 98% on-time delivery. Direct Shenzhen to LA routes.",
       keywords:
-        "Tanglog, China US logistics, ocean freight, international shipping, US fulfillment, Amazon FBA, cross-border shipping, air freight China to US",
+        "Tanglog, Tanglog International, Tanglog Logistics, China-US Professional Logistics, China-US Logistics Expert, China US logistics, ocean freight, international shipping, US fulfillment, Amazon FBA, cross-border shipping, air freight China to US",
       ogTitle: "Tanglog Logistics - China-US Shipping Experts",
       ogDescription:
         "Seamless China-US logistics with self-operated warehouses and full-track visibility.",
