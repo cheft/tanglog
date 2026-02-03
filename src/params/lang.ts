@@ -1,3 +1,3 @@
-export const match = (param) => {
-    return /^(zh|en)$/.test(param);
+export const match = (param: string) => {
+    return param === 'zh' || param === 'en';
 };
