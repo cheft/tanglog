@@ -1,6 +1,6 @@
 ---
 title: New China-US Express Line: 3-Day Delivery
-date: "2023-12-25"
+date: "2026-01-15"
 description: To meet the growing demand of cross-border e-commerce, Tanglog has launched a new express air freight line, reducing delivery time to just 3 days.
 image: https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=1200&auto=format&fit=crop&q=80
 author: Tang Yuzhe

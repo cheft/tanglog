@@ -1,6 +1,6 @@
 ---
 title: 新增中美特快专线，时效提升至3天
-date: "2023-12-25"
+date: "2026-01-15"
 description: 为了满足日益增长的跨境电商需求，棠洛国际新开通了中美特快空运专线，将平均派送时效缩短至3天。
 image: https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=1200&auto=format&fit=crop&q=80
 author: 唐煜哲
