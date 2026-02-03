@@ -212,6 +212,7 @@ const translations = {
       title: "中美物流资讯",
       description:
         "关注最新的中美跨境物流动态、亚马逊FBA发货技巧以及行业趋势分析。",
+      moreBlogs: "更多博客",
       readMore: "阅读详情",
       backToBlog: "返回博客列表",
       publishedOn: "发布于",
@@ -713,6 +714,7 @@ const translations = {
       title: "China-US Logistics Insights",
       description:
         "Stay updated with the latest China-US cross-border logistics news, Amazon FBA shipping tips, and industry trend analysis.",
+      moreBlogs: "More Blogs",
       readMore: "Read Details",
       backToBlog: "Back to Blog List",
       publishedOn: "Published on",

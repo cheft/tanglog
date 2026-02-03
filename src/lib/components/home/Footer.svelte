@@ -108,17 +108,17 @@
 
         <!-- Bottom -->
         <div
-            class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 pt-8 border-t border-white/10"
+            class="flex flex-col md:flex-row justify-center items-center text-sm text-gray-500 pt-8 border-t border-white/10"
         >
             <div>{$t.footer.copyRight}</div>
-            <div class="flex space-x-6 mt-4 md:mt-0">
+            <!-- <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#privacy" class="hover:text-white transition-colors"
                     >Privacy Policy</a
                 >
                 <a href="#terms" class="hover:text-white transition-colors"
                     >Terms of Service</a
                 >
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>

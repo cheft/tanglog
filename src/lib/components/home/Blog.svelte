@@ -15,6 +15,7 @@
             desc: "为了满足日益增长的跨境电商需求，我们新开通了中美特快空运专线，时效提升至3天。",
             descEn: "To meet the growing demand, we launched a new express air line, reducing delivery time to 3 days.",
             img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=600&auto=format&fit=crop&q=60",
+            slug: "new-express-line",
         },
         {
             date: "20 Dec, 2023",
@@ -23,6 +24,7 @@
             desc: "棠洛国际致力于推行绿色物流，通过优化路线和包装减少碳排放。",
             descEn: "Tanglog is committed to green logistics, reducing carbon emissions through route and packaging optimization.",
             img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=60",
+            slug: "green-logistics",
         },
         {
             date: "15 Dec, 2023",
@@ -31,6 +33,7 @@
             desc: "我们位于洛杉矶的全新智能化仓库已正式投入使用，仓储能力提升200%。",
             descEn: "Our new smart warehouse in Los Angeles is now operational, increasing capacity by 200%.",
             img: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&auto=format&fit=crop&q=60",
+            slug: "la-warehouse-expansion",
         },
     ];
 </script>
@@ -52,7 +55,7 @@
                 href="{activePrefix}/blog"
                 class="mt-6 md:mt-0 px-8 py-3 bg-white border border-[#0f172a] rounded-full font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
             >
-                {$t.blog.readMore}
+                {$t.blog.moreBlogs}
             </a>
         </div>
 
@@ -85,7 +88,7 @@
                             {$currentLang === "zh" ? post.desc : post.descEn}
                         </p>
                         <a
-                            href="{activePrefix}/blog"
+                            href="{activePrefix}/blog/{post.slug}"
                             class="inline-flex items-center text-sm font-bold border-b border-[#0f172a] pb-1 hover:text-[#3b82f6] hover:border-[#3b82f6] transition-colors"
                         >
                             {$t.blog.readMore}
