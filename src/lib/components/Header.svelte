@@ -8,6 +8,11 @@
 
   let isScrolled = false;
   let isMobileMenuOpen = false;
+  let showWeChatModal = false;
+
+  const toggleWeChat = () => {
+    showWeChatModal = !showWeChatModal;
+  };
 
   const toggleLang = () => {
     const newLang = $currentLang === "zh" ? "en" : "zh";
@@ -69,7 +74,7 @@
         <div
           class="relative w-[158px] h-6 overflow-hidden transform transition-transform group-hover:scale-110 duration-500"
         >
-          <img src="logo-mini.png" alt="logo" />
+          <img src="/logo-mini.png" alt="logo" />
         </div>
         <span
           class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ED6B19] to-[#005075] tracking-tight"
@@ -109,13 +114,13 @@
           </span>
         </button>
 
-        <a
-          href="{langPrefix}/shipping-calculator"
+        <button
+          on:click={toggleWeChat}
           class="flex items-center gap-2 pl-5 pr-4 py-2.5 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white text-sm font-bold transition-all shadow-lg shadow-slate-900/20 hover:shadow-xl hover:shadow-slate-900/40 hover:-translate-y-0.5"
         >
           <span>{$t.nav.consult}</span>
           <ArrowRight class="w-4 h-4" />
-        </a>
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -192,17 +197,19 @@
           </a>
         {/each}
 
-        <a
-          href="{langPrefix}/shipping-calculator"
-          class="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-green-600 leading-tight tracking-tight mt-8 flex items-center gap-4 group"
+        <button
+          on:click={() => {
+            isMobileMenuOpen = false;
+            toggleWeChat();
+          }}
+          class="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-green-600 leading-tight tracking-tight mt-8 flex items-center gap-4 group text-left"
           in:fly={{ y: 20, duration: 400, delay: 100 + navLinks.length * 50 }}
-          on:click={() => (isMobileMenuOpen = false)}
         >
           {$t.nav.consult}
           <ArrowRight
             class="w-10 h-10 text-primary-600 transform group-hover:translate-x-2 transition-transform"
           />
-        </a>
+        </button>
       </nav>
 
       <!-- Mobile Menu Footer -->
@@ -212,6 +219,66 @@
     </div>
   {/if}
 </header>
+
+<!-- WeChat QR Modal -->
+{#if showWeChatModal}
+  <div
+    class="fixed inset-0 z-[100] flex items-center justify-center p-6"
+    transition:fade={{ duration: 200 }}
+  >
+    <!-- Overlay -->
+    <div
+      class="absolute inset-0 bg-black/80 backdrop-blur-sm"
+      on:click={toggleWeChat}
+      on:keydown={(e) => e.key === "Escape" && toggleWeChat()}
+      role="presentation"
+    ></div>
+
+    <!-- Modal Content -->
+    <div
+      class="relative bg-[#1e293b] w-full max-w-sm rounded-3xl p-8 border border-white/10 shadow-2xl"
+      transition:fly={{ y: 20, duration: 400 }}
+    >
+      <button
+        on:click={toggleWeChat}
+        class="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
+        aria-label="Close modal"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <div class="text-center">
+        <h3 class="text-2xl font-bold mb-2 text-white">{$t.hero.cta_wechat}</h3>
+        <p class="text-white/60 text-sm mb-6">
+          {$currentLang === "zh"
+            ? "扫码添加专属客服，获取 1 对 1 咨询服务"
+            : "Scan to add support for 1-on-1 consultation"}
+        </p>
+
+        <div class="bg-white rounded-2xl inline-block mb-6 overflow-hidden">
+          <img
+            src="/wechat.png"
+            alt="WeChat QR Code"
+            class="w-48 h-48 object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
 
 <style>
   @keyframes blob {

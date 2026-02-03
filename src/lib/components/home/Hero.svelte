@@ -83,25 +83,25 @@
 
                 <!-- Action Buttons -->
                 <div class="flex flex-wrap gap-4">
-                    <a
-                        href="/tracking"
-                        class="inline-flex items-center text-base font-bold bg-[#EFC743] text-[#0f172a] py-4 px-8 rounded-full hover:bg-white transition-all duration-300 shadow-xl shadow-[#EFC743]/10 group"
-                    >
-                        <Search
-                            class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
-                        />
-                        {$t.hero.cta_secondary}
-                    </a>
-
                     <button
                         on:click={toggleWeChat}
-                        class="inline-flex items-center text-base font-bold bg-white/10 backdrop-blur-md text-white border border-white/20 py-4 px-8 rounded-full hover:bg-white hover:text-[#0f172a] transition-all duration-300 group"
+                        class="inline-flex items-center text-base font-bold bg-[#EFC743] text-[#0f172a] py-4 px-8 rounded-full hover:bg-white transition-all duration-300 shadow-xl shadow-[#EFC743]/10 group"
                     >
                         <MessageCircle
                             class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
                         />
                         {$t.hero.cta_wechat}
                     </button>
+
+                    <a
+                        href="/tracking"
+                        class="inline-flex items-center text-base font-bold bg-white/10 backdrop-blur-md text-white border border-white/20 py-4 px-8 rounded-full hover:bg-white hover:text-[#0f172a] transition-all duration-300 group"
+                    >
+                        <Search
+                            class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
+                        />
+                        {$t.hero.cta_secondary}
+                    </a>
                 </div>
             </div>
 
