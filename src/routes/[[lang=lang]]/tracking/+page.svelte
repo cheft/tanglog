@@ -2,7 +2,9 @@
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/home/Footer.svelte";
   import SEOHead from "$lib/components/SEOHead.svelte";
+  import { page } from "$app/stores";
   import { t, currentLang } from "$lib/i18n";
+  let activePrefix = $derived($page.params.lang ? `/${$page.params.lang}` : "");
   import {
     Search,
     Package,
@@ -391,7 +393,7 @@
     <div class="my-16 text-center">
       <p class="text-slate-500 mb-4">{$t.tracking.helpTitle}</p>
       <a
-        href="/{$currentLang}/#contact"
+        href="{activePrefix}/#contact"
         class="text-primary-600 font-bold hover:underline"
         >{$t.tracking.contactSupport}</a
       >

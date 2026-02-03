@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { t, currentLang } from "$lib/i18n";
+  let activePrefix = $derived($page.params.lang ? `/${$page.params.lang}` : "");
   import SEOHead from "$lib/components/SEOHead.svelte";
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/home/Footer.svelte";
@@ -76,7 +78,7 @@
               style="animation-delay: {i * 100}ms"
             >
               <a
-                href="/{$currentLang}/blog/{post.slug}"
+                href="{activePrefix}/blog/{post.slug}"
                 class="block h-full w-full"
               >
                 <!-- Background Image -->

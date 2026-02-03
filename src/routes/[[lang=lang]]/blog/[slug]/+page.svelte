@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { t, currentLang } from "$lib/i18n";
+  let activePrefix = $derived($page.params.lang ? `/${$page.params.lang}` : "");
   import SEOHead from "$lib/components/SEOHead.svelte";
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/home/Footer.svelte";
@@ -99,7 +101,7 @@
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto">
           <a
-            href={$currentLang === "zh" ? "/zh/blog" : "/blog"}
+            href="{activePrefix}/blog"
             class="inline-flex items-center text-[#EFC743] hover:text-white transition-colors mb-8 group text-sm font-medium"
           >
             <ArrowLeft
@@ -192,10 +194,7 @@
           </h3>
           <div class="grid md:grid-cols-3 gap-8">
             {#each displayRecentPosts as post}
-              <a
-                href="{$currentLang === 'zh' ? '/zh' : ''}/blog/{post.slug}"
-                class="group block"
-              >
+              <a href="{activePrefix}/blog/{post.slug}" class="group block">
                 {#if post.image}
                   <div class="aspect-video rounded-xl overflow-hidden mb-4">
                     <img

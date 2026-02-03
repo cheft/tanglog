@@ -4,8 +4,15 @@
   import { currentLang } from "$lib/i18n";
 
   let { children, data } = $props();
+
+  // Set language synchronously for initial SSR render
+  currentLang.set((data?.lang ?? "en") as "en" | "zh");
+
+  // Maintain reactivity on the client when data changes (route changes)
   $effect(() => {
-    currentLang.set((data?.lang ?? "en") as "en" | "zh");
+    if (data.lang) {
+      currentLang.set(data.lang as "en" | "zh");
+    }
   });
 </script>
 

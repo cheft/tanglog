@@ -2,7 +2,9 @@
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/home/Footer.svelte";
   import SEOHead from "$lib/components/SEOHead.svelte";
+  import { page } from "$app/stores";
   import { t, currentLang } from "$lib/i18n";
+  let activePrefix = $derived($page.params.lang ? `/${$page.params.lang}` : "");
   import { onMount } from "svelte";
   import {
     Search,
