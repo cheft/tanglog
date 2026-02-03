@@ -52,10 +52,10 @@
         <img
             src="/bg.png"
             alt="Logistics Background"
-            class="w-full h-full object-cover opacity-30 scale-105"
+            class="w-full h-full object-cover opacity-50 scale-105"
         />
         <div
-            class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 to-transparent"
+            class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/50 to-transparent"
         ></div>
         <div
             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f172a]"

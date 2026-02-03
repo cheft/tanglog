@@ -1,13 +1,13 @@
 ---
-title: Green Logistics: Tanglog's Commitment to Sustainability
-date: "2023-12-20"
+title: "Green Logistics: Tanglog's Commitment to Sustainability"
+date: "2026-01-10"
 description: Tanglog includes green logistics in its core strategy, reducing carbon emissions through route optimization, eco-friendly packaging, and electric vehicles.
 image: https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=80
 author: Liu Yang
 keywords: Green Logistics, Sustainability, Eco-friendly Packaging, Carbon Emissions
 ---
 
-# Green Logistics: Building a Sustainable Supply Chain Future
+
 
 In the context of global climate change, "Green Logistics" is no longer just a slogan but a mandatory course for every responsible company. As a leader in China-US cross-border logistics, Tanglog places sustainability at the core of its corporate strategy, committed to significantly reducing the environmental impact of logistics activities through technological innovation and management optimization.
 

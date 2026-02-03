@@ -57,6 +57,7 @@ export async function getPosts(): Promise<BilingualPost[]> {
           entry.image = entry.image || data.image;
         } else {
           entry.en = data as PostMetadata;
+          console.log(`[DEBUG] Parsed EN for ${slug}:`, entry.en?.title);
           entry.date = entry.date || data.date;
           entry.image = entry.image || data.image;
         }
@@ -90,7 +91,7 @@ export async function getPost(slug: string): Promise<BilingualPost | null> {
         post.date = data.date || post.date;
         post.image = data.image || post.image;
         found = true;
-      } catch (e) {}
+      } catch (e) { }
     } else if (path.endsWith(enSuffix)) {
       try {
         const { data, content } = matter(postFiles[path]);
@@ -98,7 +99,7 @@ export async function getPost(slug: string): Promise<BilingualPost | null> {
         if (!post.date) post.date = data.date;
         if (!post.image) post.image = data.image;
         found = true;
-      } catch (e) {}
+      } catch (e) { }
     }
   }
 

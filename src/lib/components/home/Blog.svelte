@@ -9,7 +9,7 @@
     // This component seems to use hardcoded posts for the landing page.
     const posts = [
         {
-            date: "25 Dec, 2023",
+            date: "15 Jan, 2026",
             title: "新增中美特快专线",
             titleEn: "New China-US Express Line",
             desc: "为了满足日益增长的跨境电商需求，我们新开通了中美特快空运专线，时效提升至3天。",
@@ -18,7 +18,7 @@
             slug: "new-express-line",
         },
         {
-            date: "20 Dec, 2023",
+            date: "10 Jan, 2026",
             title: "绿色物流可持续发展",
             titleEn: "Green Logistics Sustainability",
             desc: "棠洛国际致力于推行绿色物流，通过优化路线和包装减少碳排放。",
@@ -27,7 +27,7 @@
             slug: "green-logistics",
         },
         {
-            date: "15 Dec, 2023",
+            date: "05 Jan, 2026",
             title: "洛杉矶海外仓扩建完工",
             titleEn: "LA Overseas Warehouse Expansion",
             desc: "我们位于洛杉矶的全新智能化仓库已正式投入使用，仓储能力提升200%。",
