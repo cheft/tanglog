@@ -22,14 +22,23 @@ export interface BilingualPost {
 
 // Use import.meta.glob to eagerly load all markdown files in the posts directory.
 // This works in both dev and production (Vercel) as Vite handles the bundling.
-const postFiles = import.meta.glob("/src/posts/*.md", {
+const postFiles = import.meta.glob("../../posts/*.md", {
   eager: true,
   query: "?raw",
   import: "default",
 }) as Record<string, string>;
 
 export async function getPosts(): Promise<BilingualPost[]> {
-  console.log("[DEBUG] postFiles keys:", Object.keys(postFiles));
+  const fileEntries = Object.entries(postFiles);
+  console.log("[DEBUG] postFiles entries count:", fileEntries.length);
+
+  const debugInfo = fileEntries.map(([path, content]) => ({
+    path,
+    type: typeof content,
+    length: typeof content === 'string' ? content.length : 0,
+    preview: typeof content === 'string' ? content.substring(0, 50) : 'N/A'
+  }));
+
   const postsMap = new Map<string, BilingualPost>();
 
   const getEntry = (slug: string) => {
@@ -39,7 +48,7 @@ export async function getPosts(): Promise<BilingualPost[]> {
     return postsMap.get(slug)!;
   };
 
-  for (const path in postFiles) {
+  for (const [path, content] of fileEntries) {
     const filename = path.split("/").at(-1) || "";
     // Match slug.lang.md
     const match = filename.match(/^(.+)\.(zh|en)\.md$/);
@@ -47,8 +56,10 @@ export async function getPosts(): Promise<BilingualPost[]> {
     if (match) {
       const [, slug, lang] = match;
       try {
-        const content = postFiles[path];
-        if (!content) continue;
+        if (!content || typeof content !== 'string') {
+          console.error(`[DEBUG] Content for ${path} is not a valid string:`, typeof content);
+          continue;
+        }
         const { data } = matter(content);
         const entry = getEntry(slug);
 
@@ -58,7 +69,6 @@ export async function getPosts(): Promise<BilingualPost[]> {
           entry.image = entry.image || data.image;
         } else {
           entry.en = data as PostMetadata;
-          // console.log(`[DEBUG] Parsed EN for ${slug}:`, entry.en?.title);
           entry.date = entry.date || data.date;
           entry.image = entry.image || data.image;
         }
