@@ -539,7 +539,7 @@
     {/if}
 
     <!-- Help Note -->
-    <div class="mt-16 bg-blue-50/50 rounded-3xl p-8 border border-blue-100/50">
+    <div class="my-16 bg-blue-50/50 rounded-3xl p-8 border border-blue-100/50">
       <div class="flex gap-4">
         <Info class="w-6 h-6 text-blue-500 shrink-0" />
         <div class="text-sm text-slate-600 leading-relaxed">

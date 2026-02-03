@@ -8,6 +8,7 @@
         CheckCircle2,
     } from "lucide-svelte";
     import { fade, fly } from "svelte/transition";
+    const wechatQrUrl = "/wechat.png";
 
     let showWeChatModal = false;
 
@@ -217,22 +218,13 @@
                         : "Scan to add support for 1-on-1 consultation"}
                 </p>
 
-                <div class="bg-white p-4 rounded-2xl inline-block mb-6">
+                <div class="bg-white rounded-2xl inline-block mb-6">
                     <!-- Attempt to load wechat.jpg, fallback to placeholder if not found -->
                     <img
-                        src="/wechat.jpg"
+                        src={wechatQrUrl}
                         alt="WeChat QR Code"
                         class="w-48 h-48 object-contain"
-                        on:error={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.src =
-                                "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://u.wechat.com/EB_xH_8J8X-x_x";
-                        }}
                     />
-                </div>
-
-                <div class="text-sm text-[#EFC743] font-medium">
-                    ID: 17722561770
                 </div>
             </div>
         </div>

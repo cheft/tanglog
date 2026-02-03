@@ -388,7 +388,7 @@
     {/if}
 
     <!-- Help Section -->
-    <div class="mt-16 text-center">
+    <div class="my-16 text-center">
       <p class="text-slate-500 mb-4">Having trouble tracking your cargo?</p>
       <a href="/#contact" class="text-primary-600 font-bold hover:underline"
         >Contact our support team</a

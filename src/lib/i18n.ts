@@ -14,16 +14,16 @@ const translations = {
       warehouse: "仓库信息",
       blog: "博客",
       contact: "联系我们",
-      consult: "免费测算运费",
+      consult: "免费咨询报价",
       zip: "查地址",
     },
     hero: {
       badge: "中美跨境物流专家",
-      title_prefix: "棠洛出马",
-      title_suffix: "驰骋洛杉矶",
+      title_prefix: "棠洛护航",
+      title_suffix: "通达全美",
       description:
         "专注中美跨境物流服务，提供全方位的国际快递、空运、海运服务。自营海外仓一件代发，为您的跨境生意保驾护航。",
-      cta_primary: "免费测算运费",
+      cta_primary: "免费咨询报价",
       cta_secondary: "货物追踪",
       card_transport: {
         status: "运输状态",
@@ -481,9 +481,9 @@ const translations = {
     },
   },
   en: {
-    companyName: "Lofeng International Logistics",
+    companyName: "Tanglog International Logistics",
     keywords:
-      "Lofeng International Logistics, Lofeng, loflog, China-US Logistics, Shipping Calculator, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
+      "Tanglog International Logistics, Lofeng, loflog, China-US Logistics, Shipping Calculator, International Express, Air Freight, Sea Freight, Ocean Freight, Matson CLX, ZIM, Sea Truck, Oversize Cargo, Cross-border Logistics, Amazon FBA, Dropshipping, 3PL Service, Freight Forwarder China, US Logistics Specialist",
     nav: {
       home: "Home",
       services: "Services",
@@ -496,7 +496,7 @@ const translations = {
     },
     hero: {
       badge: "China-US Cross-Border Logistics Expert",
-      title_prefix: "LOFENG Steps In",
+      title_prefix: "Tanglog Steps In",
       title_suffix: "Swift as the Wind to LA",
       description:
         "Specializing in China-US cross-border logistics services, providing comprehensive international express, air freight, and ocean freight services. Self-operated overseas warehouses with dropshipping services to safeguard your cross-border business.",

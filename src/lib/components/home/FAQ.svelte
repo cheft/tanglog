@@ -39,7 +39,7 @@
                             24/7 Support Line
                         </div>
                         <div class="text-2xl font-bold tracking-tight">
-                            (+86) 177 2256 1770
+                            (+86) 133 1646 3314
                         </div>
                     </div>
                 </div>
