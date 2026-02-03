@@ -46,7 +46,7 @@
                         </div>
 
                         <!-- Hoverable Contact Info -->
-                        <div
+                        <!-- <div
                             class="flex space-x-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300"
                         >
                             <button
@@ -59,7 +59,7 @@
                             >
                                 <Phone class="w-4 h-4" />
                             </button>
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- Top Badge (optional) -->

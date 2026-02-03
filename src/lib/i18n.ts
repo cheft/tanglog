@@ -268,22 +268,22 @@ const translations = {
         {
           name: "唐煜哲",
           role: "运营总监 (深圳)",
-          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=400&h=500&fit=crop",
+          img: "/team/tyz.png",
         },
         {
           name: "张国强",
           role: "客户经理 (深圳)",
-          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=400&h=500&fit=crop",
+          img: "/team/zgq.png",
         },
         {
           name: "刘洋",
           role: "客户经理 (深圳)",
-          img: "https://images.unsplash.com/photo-1610088521094-0ba2657e2832?w=400&h=500&fit=crop",
+          img: "/team/ly.png",
         },
         {
           name: "陈淑菲",
           role: "客户经理 (洛杉矶)",
-          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=500&fit=crop",
+          img: "/team/csf.png",
         },
       ],
     },
@@ -767,24 +767,24 @@ const translations = {
       description: "Our experienced team is always ready to solve your logistics challenges.",
       items: [
         {
-          name: "Lin Haonan",
+          name: "Tang Yuzhe",
           role: "Op Director (SZ)",
-          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=400&h=500&fit=crop",
+          img: "/team/tyz.png",
         },
         {
-          name: "Wang Qiang",
+          name: "Zhang Guoqiang",
           role: "Account Manager (SZ)",
-          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=400&h=500&fit=crop",
+          img: "/team/zgq.png",
         },
         {
           name: "Liu Yang",
           role: "Account Manager (SZ)",
-          img: "https://images.unsplash.com/photo-1610088521094-0ba2657e2832?w=400&h=500&fit=crop",
+          img: "/team/ly.png",
         },
         {
-          name: "Sophie Chen",
+          name: "Chen Shufei",
           role: "Account Manager (LA)",
-          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=500&fit=crop",
+          img: "/team/csf.png",
         },
       ],
     },
