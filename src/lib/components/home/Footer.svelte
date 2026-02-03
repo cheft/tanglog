@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     import { t, currentLang } from "$lib/i18n";
+
+    $: activePrefix = $page.params.lang ? `/${$page.params.lang}` : "";
 </script>
 
 <footer class="pt-24 pb-12 bg-[#0f172a] text-white font-['Sarabun']">
@@ -36,35 +39,35 @@
                 <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
-                            href="/{$currentLang}/#services"
+                            href="{activePrefix}/#services"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.services}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/#testimonials"
+                            href="{activePrefix}/#testimonials"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.testimonials}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/#team"
+                            href="{activePrefix}/#team"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.team}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/#blog"
+                            href="{activePrefix}/#blog"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.blog}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/#faq"
+                            href="{activePrefix}/#faq"
                             class="hover:text-white transition-colors"
                             >{$t.footer.homeLinks.faq}</a
                         >
@@ -80,21 +83,21 @@
                 <ul class="space-y-4 text-gray-400 text-sm">
                     <li>
                         <a
-                            href="/{$currentLang}/tracking"
+                            href="{activePrefix}/tracking"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.tracking}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/zip"
+                            href="{activePrefix}/zip"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.zip}</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/{$currentLang}/blog"
+                            href="{activePrefix}/blog"
                             class="hover:text-white transition-colors"
                             >{$t.footer.linkLabels.blog}</a
                         >

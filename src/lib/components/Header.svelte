@@ -18,25 +18,21 @@
     const newLang = $currentLang === "zh" ? "en" : "zh";
     let path = $page.url.pathname;
 
-    // Standardized localization routing
-    if (path.startsWith("/zh")) {
-      path = path.replace(/^\/zh/, `/${newLang}`);
-    } else if (path.startsWith("/en")) {
-      path = path.replace(/^\/en/, `/${newLang}`);
-    } else {
-      path = `/${newLang}${path === "/" ? "" : path}`;
-    }
+    // Remove language prefixes from path
+    let cleanPath = path.replace(/^\/(zh|en)/, "");
+    if (cleanPath === "") cleanPath = "/";
 
-    goto(path);
+    // Navigate to explicit language prefix
+    goto(`/${newLang}${cleanPath === "/" ? "" : cleanPath}`);
   };
 
-  $: langPrefix = $currentLang === "zh" ? "/zh" : "";
+  $: activePrefix = $page.params.lang ? `/${$page.params.lang}` : "";
 
   $: navLinks = [
-    { name: $t.nav.home, href: `/${$currentLang}/#home` },
-    { name: $t.tracking.title, href: `/${$currentLang}/tracking` },
-    { name: $t.nav.zip, href: `/${$currentLang}/zip` },
-    { name: $t.nav.blog, href: `/${$currentLang}/blog` },
+    { name: $t.nav.home, href: `${activePrefix}/#home` },
+    { name: $t.tracking.title, href: `${activePrefix}/tracking` },
+    { name: $t.nav.zip, href: `${activePrefix}/zip` },
+    { name: $t.nav.blog, href: `${activePrefix}/blog` },
   ];
 
   onMount(() => {
@@ -67,7 +63,7 @@
     >
       <!-- Logo -->
       <a
-        href={langPrefix || "/"}
+        href={activePrefix || "/"}
         class="flex items-center gap-3 group relative z-10"
       >
         <div

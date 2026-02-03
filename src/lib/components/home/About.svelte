@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     import { t, currentLang } from "$lib/i18n";
+
+    $: activePrefix = $page.params.lang ? `/${$page.params.lang}` : "";
 
     $: stats = [
         {
@@ -38,7 +41,7 @@
 
             <div class="flex items-center space-x-4">
                 <a
-                    href="/{$currentLang}/#contact"
+                    href="{activePrefix}/#contact"
                     class="inline-flex items-center text-sm font-bold border-b-2 border-[#0f172a] pb-1 hover:text-[#3b82f6] hover:border-[#3b82f6] transition-colors"
                 >
                     {$currentLang === "zh"

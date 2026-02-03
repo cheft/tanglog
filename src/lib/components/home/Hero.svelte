@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Motion } from "svelte-motion";
+    import { page } from "$app/stores";
     import { t, currentLang } from "$lib/i18n";
     import {
         MessageCircle,
@@ -39,6 +40,8 @@
     const toggleWeChat = () => {
         showWeChatModal = !showWeChatModal;
     };
+
+    $: activePrefix = $page.params.lang ? `/${$page.params.lang}` : "";
 </script>
 
 <section
@@ -106,7 +109,7 @@
                     </button>
 
                     <a
-                        href="/{$currentLang}/tracking"
+                        href="{activePrefix}/tracking"
                         class="inline-flex items-center text-base font-bold bg-white/10 backdrop-blur-md text-white border border-white/20 py-4 px-8 rounded-full hover:bg-white hover:text-[#0f172a] transition-all duration-300 group"
                     >
                         <Search

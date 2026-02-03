@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     import { t, currentLang } from "$lib/i18n";
+
+    $: activePrefix = $page.params.lang ? `/${$page.params.lang}` : "";
     import { ArrowRight } from "lucide-svelte";
 
     // In a real app, these might come from data.
@@ -46,7 +49,7 @@
                 </h3>
             </div>
             <a
-                href="/{$currentLang}/blog"
+                href="{activePrefix}/blog"
                 class="mt-6 md:mt-0 px-8 py-3 bg-white border border-[#0f172a] rounded-full font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
             >
                 {$t.blog.readMore}
@@ -82,7 +85,7 @@
                             {$currentLang === "zh" ? post.desc : post.descEn}
                         </p>
                         <a
-                            href="/{$currentLang}/blog"
+                            href="{activePrefix}/blog"
                             class="inline-flex items-center text-sm font-bold border-b border-[#0f172a] pb-1 hover:text-[#3b82f6] hover:border-[#3b82f6] transition-colors"
                         >
                             {$t.blog.readMore}

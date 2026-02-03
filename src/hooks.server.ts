@@ -3,26 +3,28 @@ import { redirect, type Handle } from '@sveltejs/kit';
 export const handle: Handle = async ({ event, resolve }) => {
     const { pathname } = event.url;
 
-    // List of top-level paths that should be localized
+    // List of top-level paths that should be localized (for matching purposes if needed)
     const rootPaths = ['/tracking', '/zip', '/blog'];
 
-    // Check if the request is for the root or one of the top-level paths without a lang prefix
-    const isRoot = pathname === '/';
-    const isUnderivable = rootPaths.some(p => pathname === p || pathname.startsWith(p + '/'));
-    const isEnOrZh = pathname.startsWith('/zh') || pathname.startsWith('/en');
+    // Detect language from URL param if available (though hooks handle before param is parsed by kit usually)
+    // Actually, we'll check the prefix manually for locals
+    const isZh = pathname.startsWith('/zh');
+    const isEn = pathname.startsWith('/en');
 
-    if ((isRoot || isUnderivable) && !isEnOrZh) {
+    let detectedLang: 'zh' | 'en' = 'en';
+
+    if (isZh) {
+        detectedLang = 'zh';
+    } else if (isEn) {
+        detectedLang = 'en';
+    } else {
+        // Transparent detection for root paths
         const langHeader = event.request.headers.get('accept-language') || 'en';
-
-        // Detection logic: China, HK, TW usually send zh-CN, zh-HK, zh-TW
-        // If it starts with 'zh', we default to 'zh'.
         const isChinese = langHeader.toLowerCase().split(',')[0].startsWith('zh');
-        const detectedLang = isChinese ? 'zh' : 'en';
-
-        // Redirect to the localized version
-        const newPath = `/${detectedLang}${pathname === '/' ? '' : pathname}`;
-        throw redirect(307, newPath);
+        detectedLang = isChinese ? 'zh' : 'en';
     }
+
+    event.locals.lang = detectedLang;
 
     const response = await resolve(event);
     return response;
