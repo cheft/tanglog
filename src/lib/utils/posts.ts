@@ -57,7 +57,7 @@ export async function getPosts(): Promise<BilingualPost[]> {
           entry.image = entry.image || data.image;
         } else {
           entry.en = data as PostMetadata;
-          console.log(`[DEBUG] Parsed EN for ${slug}:`, entry.en?.title);
+          // console.log(`[DEBUG] Parsed EN for ${slug}:`, entry.en?.title);
           entry.date = entry.date || data.date;
           entry.image = entry.image || data.image;
         }

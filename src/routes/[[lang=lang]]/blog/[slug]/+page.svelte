@@ -111,7 +111,7 @@
           </a>
 
           <h1
-            class="text-4xl md:text-6xl font-black text-white leading-[1.1] mb-8 tracking-tight"
+            class="text-3xl md:text-4xl font-black text-white leading-[1.1] mb-8 tracking-tight"
           >
             {activePost.title}
           </h1>

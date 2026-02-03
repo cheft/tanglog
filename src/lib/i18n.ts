@@ -729,7 +729,7 @@ const translations = {
           name: "Zhang Wei",
           role: "E-comm CEO",
           text: "TangLog's air freight is incredibly stable. Their self-operated warehouse in LA provides lightning-fast fulfillment.",
-          img: "https://images.unsplash.com/photo-1540569014015-19a7ee504e18?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "Robert Miller",
@@ -741,7 +741,7 @@ const translations = {
           name: "Chen Lin",
           role: "Boutique Owner",
           text: "Shipping LCL has never been easier. As a small seller, I value safety and transparent pricing, and TangLog delivers.",
-          img: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "Jessica Brown",
@@ -753,7 +753,7 @@ const translations = {
           name: "Li Jun",
           role: "Furniture Trader",
           text: "Oversized shipping was always a headache until we found TangLog. Their US trucking service is professional and reliable.",
-          img: "https://images.unsplash.com/photo-1550521808-72787e91d374?w=200&h=200&fit=crop",
+          img: "",
         },
         {
           name: "David Williams",
