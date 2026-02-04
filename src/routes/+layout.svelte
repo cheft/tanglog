@@ -6,12 +6,12 @@
   let { children, data } = $props();
 
   // Set language synchronously for initial SSR render
-  currentLang.set((data?.lang ?? "en") as "en" | "zh");
+  currentLang.set((data?.lang ?? "en") as "en" | "zh" | "cn");
 
   // Maintain reactivity on the client when data changes (route changes)
   $effect(() => {
     if (data.lang) {
-      currentLang.set(data.lang as "en" | "zh");
+      currentLang.set(data.lang as "en" | "zh" | "cn");
     }
   });
 </script>

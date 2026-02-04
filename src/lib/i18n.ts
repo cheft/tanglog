@@ -1,10 +1,11 @@
 import { derived, writable } from "svelte/store";
 
-export const currentLang = writable<"zh" | "en">("zh");
+export const currentLang = writable<"zh" | "en" | "cn">("zh");
 
-const translations = {
+const translations: Record<string, any> = {
   zh: {
     companyName: "棠洛国际物流",
+
     keywords:
       "棠洛国际物流, 棠洛物流, 棠洛国际, 中美专业物流, 中美物流专家, tanglog, 中美物流, 美国海外仓, 国际快递, 美国空派, 美国海派, 美森快船, 以星快船, 美国海卡, 超大件运输, 跨境电商物流, 亚马逊FBA头程, 独立站物流, 一件代发, 深圳国际物流, 美国专线",
     nav: {
@@ -994,6 +995,8 @@ const translations = {
   },
 };
 
+translations.cn = translations.zh;
+
 export const t = derived(currentLang, ($currentLang) => {
-  return translations[$currentLang];
+  return translations[$currentLang] || translations.en;
 });
