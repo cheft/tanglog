@@ -137,16 +137,6 @@
       {:else}
         <div class="text-center py-24 text-slate-500">
           <p class="text-lg">No posts found.</p>
-          {#if data.debugInfo}
-            <div
-              class="mt-8 p-4 bg-gray-800 text-left text-xs font-mono text-gray-400 overflow-auto max-w-2xl mx-auto rounded"
-            >
-              <p class="mb-2 font-bold text-white">
-                Debug Info (Files detected by glob):
-              </p>
-              <pre>{JSON.stringify(data.debugInfo, null, 2)}</pre>
-            </div>
-          {/if}
         </div>
       {/if}
     </div>
