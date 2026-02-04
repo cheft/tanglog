@@ -58,7 +58,7 @@
         <h1
           class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
-          <span class="text-[#EFC743]">{$t.blog.title}</span> & Feeds
+          <span class="text-[#EFC743]">{$t.blog.title}</span>
         </h1>
         <p class="text-white/70 text-lg md:text-xl max-w-2xl leading-relaxed">
           {$t.blog.description}

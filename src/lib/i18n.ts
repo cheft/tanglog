@@ -26,7 +26,7 @@ const translations: Record<string, any> = {
       title_prefix: "棠洛护航",
       title_suffix: "通达全美",
       description:
-        "专注中美跨境物流服务，提供全方位的国际快递、空运、海运服务。自营海外仓一件代发，为您的跨境生意保驾护航。",
+        "精耕中美跨境物流，量身定制国际快递、空运及海运全案。依托自营海外仓高效代发，全方位赋能您的全球贸易增长。",
       cta_primary: "免费咨询报价",
       cta_secondary: "货物追踪",
       card_transport: {
@@ -54,14 +54,14 @@ const translations: Record<string, any> = {
       cargoJourney: "物流旅程",
       realtime: "实时追踪",
       description:
-        "在下方输入您的运单号即可追踪。我们为您提供全程可视化的货物追踪服务。",
+        "即刻输入运单号，开启全程可视化追踪旅程。每一站进度，尽在掌控之中。",
       noInfo: "未找到信息",
       noInfoTitle: "未找到结果",
       fetchError: "获取物流信息失败，请重试。",
       recentHistory: "最近查询记录",
       clearAll: "清空全部",
-      helpTitle: "追踪遇到问题？",
-      contactSupport: "联系我们的客服团队",
+      helpTitle: "查询遇到疑问？",
+      contactSupport: "咨询您的专属物流专家",
     },
     stats: {
       years: "年行业经验",
@@ -73,33 +73,33 @@ const translations: Record<string, any> = {
     },
     services: {
       label: "我们的服务",
-      title: "全方位物流解决方案",
+      title: "一站式全域物流方案",
       description:
-        "为不同类型的客户群体提供定制化解决方案，满足您的多样化需求。",
+        "针对不同贸易形态提供深度定制化方案，全方位满足您的跨境托付需求。",
       items: [
         {
-          title: "国际快递/空运",
+          title: "国际快递/专线空运",
           description:
-            "DHL、FedEx、UPS 等主流快递渠道，3-7天极速送达。包含专业空运服务，时效稳定。",
-          features: ["门到门服务", "全程实时追踪", "一站式清关"],
+            "对接 UPS、FedEx 及 DHL 等顶级渠道，实现 3-7 天极速达。结合专业空运资源，确保时效精准可控。",
+          features: ["全程门到门", "实时动态追踪", "专业合规清关"],
         },
         {
           title: "海运整柜/拼箱",
           description:
-            "适合大宗货物运输，成本优势显著。支持整柜(FCL)和拼箱(LCL)服务。",
-          features: ["美西15天，美东30天", "全美港口覆盖", "节省40%+成本"],
+            "专为大宗贸易设计的成本优化方案。涵盖整柜 (FCL) 与拼箱 (LCL)，弹性满足各类货量需求。",
+          features: ["美西15天/美东30天", "港口深度覆盖", "显著降低物流成本"],
         },
         {
-          title: "美国本土派送",
+          title: "全美本土派送",
           description:
-            "自有卡车车队，覆盖全美派送网络。支持超大件家具、灯具等特殊物品运输。",
-          features: ["末端派送服务", "预约送货上门", "白手套服务"],
+            "自有卡车班次直通全美各地。深度覆盖超大件及特殊家具配送，让末端派送无死角。",
+          features: ["班次定时出发", "专业入户送货", "白手套增值服务"],
         },
         {
-          title: "一件代发",
+          title: "智能仓配服务",
           description:
-            "专为独立站卖家打造的仓储代发方案，让您专注于销售，物流交给我们。",
-          features: ["极速履约响应", "智能库存管理", "退换货处理"],
+            "为独立站及电商卖家打造的仓配一体化服务。省去物流琐事，让您全力投入前端品牌运营。",
+          features: ["订单极速响应", "多仓协同管理", "退换货无忧处理"],
         },
       ],
     },
@@ -210,9 +210,9 @@ const translations: Record<string, any> = {
     },
     blog: {
       label: "棠洛博客",
-      title: "中美物流资讯",
+      title: "中美物流知识 & 资讯",
       description:
-        "关注最新的中美跨境物流动态、亚马逊FBA发货技巧以及行业趋势分析。",
+        "洞察中美贸易前沿动态，掌握亚马逊 FBA 实战技巧，深度剖析跨境物流趋势。",
       moreBlogs: "更多博客",
       readMore: "阅读详情",
       backToBlog: "返回博客列表",
@@ -320,10 +320,10 @@ const translations: Record<string, any> = {
       ],
     },
     zip: {
-      title: "美国地址与邮编查询",
-      description: "查询美国地址类型（商业/住宅）以及邮编偏远附加费情况。",
+      title: "全美地址与邮编智查工具",
+      description: "深度解析美国地址属性（商业/住宅），精准核算邮编偏远附加费用。",
       placeholder:
-        "输入5位邮编或完整地址 (例如 19104 或 6761 San Anselmo Way...)",
+        "输入 5 位邮编或完整地址 (例如 90001 或 6761 San Anselmo Way...)",
       btn: "查询",
       zipInfo: "邮编属性",
       addressInfo: "地址校验与标准化",
@@ -345,15 +345,15 @@ const translations: Record<string, any> = {
       none: "无",
       recentHistory: "最近查询记录",
       clearAll: "清空全部",
-      tip: "提示：查询完整地址时，请务必以 5 位邮政编码结尾以获得更精准的解析结果。",
+      tip: "温馨提示：为确保解析精度，查询完整地址时请务必包含 5 位数字邮政编码。",
       noResultTitle: "未找到结果",
       upsStatus: "UPS 配送状态",
       fedexStatus: "FEDEX 配送状态",
       dhlStatus: "DHL 配送状态",
       notesTitle: "说明事项：",
-      note1: "邮编校验支持美国 5 位数字邮编，可查询其是否属于偏远地区（Residential/Remote Area）。",
-      note2: "地址校验工具可自动识别并标准化美线地址，并判断其是“商业（Commercial）”还是“住宅（Residential）”属性。",
-      note3: "住宅地址在末端派送（UPS/FedEx/DHL）时通常会产生额外的住宅附加费。",
+      note1: "覆盖全美 5 位数字邮编数据库，智能检索偏远地区（Rural/Remote Area）附加费风险。",
+      note2: "多维度标准化美线地址，自动甄别“商业区（Commercial）”与“住宅区（Residential）”差异。",
+      note3: "识别为住宅地址的订单，末端派送（UPS/FedEx/DHL）通常会产生相应的住宅服务附加费。",
       statusNormal: "正常",
     },
     calculator: {
@@ -509,7 +509,7 @@ const translations: Record<string, any> = {
       title_prefix: "Expert China-US",
       title_suffix: "Logistics Solutions",
       description:
-        "Premium China-US cross-border logistics providing end-to-end international express, air, and ocean freight. Our self-operated US warehouses offer seamless fulfillment and dropshipping services.",
+        "Specializing in China-US logistics with comprehensive express, air, and ocean freight solutions. Empowering your global trade with high-efficiency fulfillment from our self-operated US warehouses.",
       cta_primary: "Get Free Quote",
       cta_secondary: "Cargo Tracking",
       card_transport: {
@@ -537,14 +537,14 @@ const translations: Record<string, any> = {
       cargoJourney: "Cargo Journey",
       realtime: "Real-time Tracking",
       description:
-        "Track your shipment by entering your tracking number below. We provide end-to-end visibility for all your cargo.",
+        "Enter your tracking number below to start your visibility journey. Monitor every milestone of your shipment in real-time.",
       noInfo: "No Information Found",
       noInfoTitle: "No Result Found",
       fetchError: "Failed to fetch tracking information. Please try again.",
       recentHistory: "Recent Search History",
       clearAll: "Clear All",
-      helpTitle: "Having trouble tracking your cargo?",
-      contactSupport: "Contact our support team",
+      helpTitle: "Need tracking assistance?",
+      contactSupport: "Talk to our dedicated logistics experts",
     },
     stats: {
       years: "Years of Industry Experience",
@@ -556,48 +556,48 @@ const translations: Record<string, any> = {
     },
     services: {
       label: "Our Services",
-      title: "Comprehensive Logistics Solutions",
+      title: "End-to-End Logistics Solutions",
       description:
-        "Providing customized solutions for different customer groups to meet your diverse needs.",
+        "Deeply customized solutions for various trade models, meeting all your cross-border logistics requirements.",
       items: [
         {
-          title: "International Express/Air Freight",
+          title: "Intl Express & Air Freight",
           description:
-            "Mainstream express channels including DHL, FedEx, UPS with 3-7 day express delivery. Professional air freight services with stable delivery times.",
+            "Leveraging premium carriers like UPS, FedEx, and DHL for 3-7 day deliveries. Combined with elite air freight resources for precise and reliable transit times.",
           features: [
             "Door-to-Door Service",
-            "Real-Time Tracking",
-            "One-Stop Customs Clearance",
+            "Real-Time dynamic Tracking",
+            "Professional Customs Clearance",
           ],
         },
         {
           title: "Ocean Freight FCL/LCL",
           description:
-            "Ideal for large-volume cargo transportation with significant cost advantages. Supporting both Full Container Load (FCL) and Less than Container Load (LCL) services.",
+            "Cost-optimized solutions tailored for bulk trade. Supporting both FCL and LCL to flexibly accommodate any shipment volume.",
           features: [
-            "West Coast 15 Days, East Coast 30 Days",
+            "15 Days to West / 30 Days to East",
             "Nationwide Port Coverage",
-            "40%+ Cost Savings",
+            "Significant Logistics Cost Savings",
           ],
         },
         {
-          title: "US Domestic Delivery",
+          title: "US Domestic Distribution",
           description:
-            "Own truck fleet covering nationwide delivery network. Supporting transportation of special items such as large furniture and lighting fixtures.",
+            "Direct trucking routes covering the entire USA. Specialized in delivering oversized furniture and challenging loads for seamless last-mile coverage.",
           features: [
-            "Last-Mile Delivery Service",
-            "Scheduled Home Delivery",
-            "White Glove Service",
+            "Scheduled Truck Departures",
+            "White Glove Inside Delivery",
+            "Special Handling Expertise",
           ],
         },
         {
-          title: "Dropshipping Service",
+          title: "Smart Fulfillment Services",
           description:
-            "Warehousing and dropshipping solution designed specifically for independent online store merchants, allowing you to focus on sales while we handle logistics.",
+            "Integrated smart warehousing and distribution for D2C brands. Focus on growing your business while we handle the complexity of logistics.",
           features: [
-            "Rapid Fulfillment Response",
-            "Smart Inventory Management",
-            "Return Processing Service",
+            "Rapid Order Fulfillment",
+            "Multi-Warehouse Optimization",
+            "Hassle-Free Returns Management",
           ],
         },
       ],
@@ -712,9 +712,9 @@ const translations: Record<string, any> = {
     },
     blog: {
       label: "Tanglog Blog",
-      title: "China-US Logistics Insights",
+      title: "China-US Logistics Knowledge & Intelligence",
       description:
-        "Stay updated with the latest China-US cross-border logistics news, Amazon FBA shipping tips, and industry trend analysis.",
+        "Insights into China-US trade dynamics, practical Amazon FBA shipping strategies, and in-depth logistics trend analysis.",
       moreBlogs: "More Blogs",
       readMore: "Read Details",
       backToBlog: "Back to Blog List",
@@ -822,11 +822,11 @@ const translations: Record<string, any> = {
       ],
     },
     zip: {
-      title: "US Address & Zip Search",
+      title: "USA Smart Address & Zip Code Locator",
       description:
-        "Check US address type (Commercial/Residential) and Zip code remote surcharge status.",
+        "Analyze US address types and verify potential remote area surcharges with precision.",
       placeholder:
-        "Enter 5-digit zip or full address (e.g., 19104 or 6761 San Anselmo Way...)",
+        "Enter 5-digit zip or full address (e.g., 90210 or 6761 San Anselmo Way...)",
       btn: "Search",
       zipInfo: "Zip Code Attributes",
       addressInfo: "Address Verification & Standardization",
@@ -848,15 +848,15 @@ const translations: Record<string, any> = {
       none: "None",
       recentHistory: "Recent Search History",
       clearAll: "Clear All",
-      tip: "Tip: When searching for a full address, please include the 5-digit zip code for more accurate results.",
+      tip: "Expert Tip: For the most accurate results, please ensure your search includes the 5-digit US zip code.",
       noResultTitle: "No Result Found",
       upsStatus: "UPS Delivery Status",
       fedexStatus: "FEDEX Delivery Status",
       dhlStatus: "DHL Delivery Status",
       notesTitle: "Notes:",
-      note1: "Zip code verification supports US 5-digit zip codes to check for Remote Area status.",
-      note2: "The address tool automatically verifies and standardizes US addresses and determines if they are Commercial or Residential.",
-      note3: "Residential addresses typically incur additional residential surcharges for last-mile delivery (UPS/FedEx/DHL).",
+      note1: "Database covering all 5-digit US zips to instantly identify Remote Area surcharge risks.",
+      note2: "Standardize US addresses and automatically distinguish between Commercial and Residential delivery zones.",
+      note3: "Shipments flagged as Residential typically incur standard carrier surcharges for last-mile delivery services.",
       statusNormal: "Normal",
     },
     calculator: {
