@@ -28,5 +28,5 @@ export const seoData = derived(currentLang, ($currentLang) => {
     },
   };
 
-  return data[$currentLang];
+  return data[$currentLang] || data.zh;
 });
